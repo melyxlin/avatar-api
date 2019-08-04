@@ -1,29 +1,33 @@
 from flask import Flask, request, jsonify
+from sqlalchemy import create_engine
+
 app = Flask(__name__)
 app.config["DEBUG"] = True
-
-senshies = [
-    {'id':1, 'name': 'Tsukino Usagi', 'senshi': 'Sailor Moon', 'Guardian':'Love and Justice'},
-    {'id':2, 'name': 'Mizuno Ami', 'senshi':'Sailor Mercury', 'Guardian': 'Water and Wisdom'},
-    {'id':3, 'name': 'Hino Rei', 'senshi': 'Sailor Mars', 'Guardian':'Fire and Passion'},
-    {'id':4, 'name':'Kino Makoto', 'senshi': 'Sailor Jupiter', 'Guardian':'Thunder and Courage'},
-    {'id':5, 'name':'Aino Minako', 'senshi':'Sailor Venus', 'Guardian':'Love and Beauty'}
-]
+db_connection = create_engine('sqlite:////Users/momol/SideProjects/sailor-moon-api/sailormoon.db') #database url
 
 @app.route("/", methods=['GET'])
-def hello():
+def mainPage():
+    """
+        main page
+    """
     return "Sailor Moon API"
 
 @app.route("/senshi/all", methods=['GET'])
 def get_all_senshi():
-    return jsonify(senshies)
+    """
+        returns all senshies
+    """
+    conn = db_connection.connect() # connect to database
+    query = conn.execute("SELECT * FROM Senshi") #executing query
+    results = {'data':[dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]} #parsing through query
+    return jsonify(results)
 
 @app.route("/senshi/<int:id>", methods=['GET'])
 def find_senshi(id):
-    results = []
-    for senshi in senshies:
-        if senshi['id'] == id:
-            results.append(senshi)
+    """
+        returns data of a senshi with a given id
+    """
+    conn = db_connection.connect()
+    query = conn.execute("SELECT * FROM Senshi WHERE SenshiId = %d" %int(id))
+    results = {'data':[dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]}
     return jsonify(results)
-
-app.run()
