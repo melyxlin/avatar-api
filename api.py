@@ -24,7 +24,7 @@ def get_all_superheroes():
 @app.route("/superheroes/name/<string:name>", methods=['GET'])
 def find_superhero_via_name(name):
     """
-        returns data of a senshi with a given id
+        returns data of a superhero with a given name
     """
     conn = db_connection.connect()
     sql = "SELECT * FROM superheroes WHERE name = '%s'" %(name)
@@ -36,7 +36,7 @@ def find_superhero_via_name(name):
 @app.route("/superheroes/alias/<string:alias>", methods=['GET'])
 def find_superhero_via_alias(alias):
     """
-        returns data of a superhero with a given 
+        returns data of a superhero with a given alias
     """
     conn = db_connection.connect()
     sql = "SELECT * FROM superheroes WHERE name = '%s'" %(alias)
