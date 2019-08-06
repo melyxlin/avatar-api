@@ -1,2 +1,1 @@
-# sailor-moon-api
-🌙
+# mcu-api
