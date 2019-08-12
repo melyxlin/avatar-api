@@ -1,1 +1,1 @@
-# mcu-api
+# avatar-api
