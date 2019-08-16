@@ -1,4 +1,4 @@
-from flask import Flask, request,abort
+from flask import Flask, request,abort, render_template
 from flask_api import status
 from character import *
 
@@ -8,11 +8,11 @@ app.config["DEBUG"] = True
 #endpoint for mainpage
 @app.route("/", methods=['GET'])
 def mainPage():
-    return "Avatar the Last Airbender API"
+    return render_template('/templates/index.html')
 
 @app.route("/characters", methods=['GET'])
 def get_characters():
-    return all()
+    return all_characters()
 
 @app.route("/character/<string:name>", methods=['GET'])
 def get_character(name):
