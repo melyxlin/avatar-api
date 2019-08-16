@@ -1,0 +1,7 @@
+[
+    {"name":"Aang", "element":"Air Nomad", "nationality":"Southern Air Temple", "bending":["Airbending", "Waterbending", "Earthbending", "Firebending"], "gender":"male"},
+    {"name": "Katara", "element": "Water Tribe", "nationality": "Southern Water Tribe", "bending":["Waterbending", "Bloodbending"], "gender":"female"},
+    {"name": "Zuko", "element": "Fire Nation", "nationality": "Fire Nation", "bending":["Firebending"], "gender":"male"},
+    {"name": "Sokka", "element": "Water", "nationality":"Southern Water Tribe", "bending":[], "gender":"male"},
+    {"name": "Toph", "element":"Earth Kingdom", "natinality":"Earth Kingdom", "bending":["Earthbending", "Metalbendingx"], "gender":"female"}
+]

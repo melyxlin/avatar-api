@@ -1,6 +1,6 @@
-from flask import Flask, request, jsonify
-import json
-from dataload import *
+from flask import Flask, request,abort
+from flask_api import status
+from character import *
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -12,24 +12,29 @@ def mainPage():
 
 @app.route("/characters", methods=['GET'])
 def get_characters():
-    characters_data = load_characters()
-    print(characters_data)
-    return jsonify(characters_data)
+    return all()
 
-@app.route("/characters/<string:name>", methods=['GET'])
+@app.route("/character/<string:name>", methods=['GET'])
 def get_character(name):
-    characters_data = load_characters()
-    character = {}
-    for char in characters_data:
-        if char['name'] == name:
-            character.update(char)
-    return jsonify(character)
+        return character(name)
 
-@app.route("/benders/<string:element>", methods=['GET'])
-def get_benders(element):
-    characters_data = load_characters()
-    benders = {}
-    for character in characters_data:
-        if element in character['Bending']:
-            benders.update(character)
-    return jsonify(benders)
+@app.route("/characters/<string:filter>", methods=['GET'])
+def get_character_filter(filter):
+        filters = charactersFilter()
+        if filter in filters.get_bendings():
+                print("pass2")
+                return benders(filter)
+        elif filter in filters.get_genders():
+                print("pass3")
+                return gender(filter)
+        elif filter in filters.get_ethnicity():
+                print("pass1")
+                return ethnicity(filter)
+
+        else:
+                abort(404, description="Filter not found") 
+
+@app.errorhandler(404)
+def resource_not_found(e):
+        return jsonify(error=str(e)), 404
+        
