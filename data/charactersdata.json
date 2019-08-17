@@ -1,7 +1,7 @@
 [
-    {"name":"Aang", "element":"Air Nomad", "nationality":"Southern Air Temple", "bending":["Airbending", "Waterbending", "Earthbending", "Firebending"], "gender":"male"},
-    {"name": "Katara", "element": "Water Tribe", "nationality": "Southern Water Tribe", "bending":["Waterbending", "Bloodbending"], "gender":"female"},
-    {"name": "Zuko", "element": "Fire Nation", "nationality": "Fire Nation", "bending":["Firebending"], "gender":"male"},
-    {"name": "Sokka", "element": "Water", "nationality":"Southern Water Tribe", "bending":[], "gender":"male"},
-    {"name": "Toph", "element":"Earth Kingdom", "natinality":"Earth Kingdom", "bending":["Earthbending", "Metalbendingx"], "gender":"female"}
+    {"name":"Aang", "element":"Air", "nationality":"Southern Air Temple", "bending":["Airbending", "Waterbending", "Earthbending", "Firebending"], "gender":"Male", "year of birth":"12 BG", "year of death":"153 AG", "roles":["Avatar", "Co-founder of the United Republic of Nations", "Air Nomad Culture Teacher", "Airbending instructor"], "aliases":["Twinkle Toes", "Kuzon"]},
+    {"name": "Katara", "element": "Water", "nationality": "Southern Water Tribe", "bending":["Waterbending", "Bloodbending"], "gender":"Female", "year of birth":"85 AG", "year of death":"", "roles":["Waterbending Instructor", "Master Healer"], "aliases":[]},
+    {"name": "Zuko", "element": "Fire", "nationality": "Fire Nation", "bending":["Firebending"], "gender":"Male", "year of birth":"83 AG", "year of death":"", "roles":["Fire Lord", "Co-founder of the United Republic of Nations", "Tea Shop Assistant", "Ambassador", "Firebending Instructor"], "aliases":["Lee", "Zuzu", "Blue Spirit"]},
+    {"name": "Sokka", "element": "Water", "nationality":"Southern Water Tribe", "bending":[], "gender":"Male", "year of birth":"84 AG", "year of death":"158 AG - 170 AG", "roles":["Southern Water Tribe representative on the United Republic Council", "Chairman of the United Republic Council", "Chieftain of Southern Water Tribe"], "aliases":["Wang Fire", "Captain Boomerang"]},
+    {"name": "Toph", "element":"Earth", "nationality":"Earth Kingdom", "bending":["Earthbending", "Metalbending"], "gender":"Female", "year of birth":"87 AG - 88 AG", "year of death":"", "roles":["Earthbending Instructor", "Professional Earthbending Fighter", "Republic City Chief of Police", "Founder of Beifong Metalbending Academy"], "aliases":["The Blind Bandit"]}
 ]

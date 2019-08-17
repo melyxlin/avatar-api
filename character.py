@@ -5,7 +5,7 @@ class charactersFilter:
     def __init__(self):
         self.__bending = ['Waterbending', 'Earthbending', 'Firebending', 'Airbending', 'Metalbending', 'Bloodbending']
         self.__gender = ['male', 'female']
-        self.__ethnicity = ['Water', 'Fire', 'Air', 'Earth']
+        self.__element = ['Water', 'Fire', 'Air', 'Earth']
     
     def get_bendings(self):
         return self.__bending
@@ -14,7 +14,7 @@ class charactersFilter:
         return self.__gender
 
     def get_ethnicity(self):
-        return self.__ethnicity
+        return self.__element
 
 
 def all_characters():
@@ -29,11 +29,11 @@ def character(name):
             characters.append(character)
     return jsonify(characters)
 
-def benders(element):
+def benders(bending):
     characters_data = load_characters()
     characters = []
     for character in characters_data:
-        if element in character['bending']:
+        if bending in character['bending']:
             characters.append(character)
     return jsonify(characters)
     
@@ -45,11 +45,11 @@ def gender(gender):
            characters.append(character)
     return jsonify(characters)
 
-def ethnicity(ethnicity):
+def element(element):
     characters_data = load_characters()
     characters = []
     for character in characters_data:
-        if character['ethnicity'] == ethnicity:
+        if character['element'] == element:
             characters.append(character)
     return jsonify(characters)
         
