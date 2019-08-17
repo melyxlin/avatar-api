@@ -23,11 +23,10 @@ def all_characters():
 
 def character(name):
     character_data  = load_characters()
-    characters  = []
     for character in character_data:
         if character["name"] == name:
-            characters.append(character)
-    return jsonify(characters)
+            return jsonify(character)
+    return None
 
 def benders(bending):
     characters_data = load_characters()

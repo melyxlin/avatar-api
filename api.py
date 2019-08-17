@@ -20,7 +20,12 @@ def get_characters():
 
 @app.route("/character/<string:name>", methods=['GET'])
 def get_character(name):
-        return character(name)
+        return_character =  character(name)
+        if return_character != None:
+                return return_character
+        else:
+                abort(404, description="character not found") 
+
 
 @app.route("/characters/<string:filter>", methods=['GET'])
 def get_character_filter(filter):
