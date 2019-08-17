@@ -10,6 +10,10 @@ app.config["JSON_SORT_KEYS"] = False
 def mainPage():
     return render_template('index.html')
 
+@app.route("/about", methods=['GET'])
+def docPage():
+        return render_template('about.html')
+
 @app.route("/characters", methods=['GET'])
 def get_characters():
     return all_characters()
