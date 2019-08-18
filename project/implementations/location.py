@@ -1,4 +1,4 @@
-from data import *
+from project.data import *
 from flask import jsonify
 
 def get_all_locations():
