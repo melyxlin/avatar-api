@@ -16,29 +16,38 @@ def docPage():
 
 @app.route("/characters", methods=['GET'])
 def get_characters():
-    return all_characters()
+    return get_all_characters()
 
 @app.route("/character/<string:name>", methods=['GET'])
 def get_character(name):
-        return_character =  character(name)
-        if return_character != None:
-                return return_character
+        return_characters =  get_specific_character(name)
+        if return_characters != None:
+                return return_characters
         else:
                 abort(404, description="character not found") 
 
 
-@app.route("/characters/<string:filter>", methods=['GET'])
-def get_character_filter(filter):
-        filters = charactersFilter()
-        if filter in filters.get_bendings():
-                return benders(filter)
-        elif filter in filters.get_genders():
-                return gender(filter)
-        elif filter in filters.get_element():
-                return element(filter)
-        else:
-                abort(404, description="Filter not found") 
+@app.route("/characters/bending/<string:bending>", methods=['GET'])
+def get_characters_bending(bending):
+        return get_benders(bending)
 
+@app.route("/characters/gender/<string:gender>", methods=["GET"])
+def get_characters_gender(gender):
+        return get_gender(gender)
+
+@app.route("/characters/ethnicity/<string:ethnicity>", methods=["GET"])
+def get_characters_ethnicity(ethnicity):
+        return get_ethnicity(ethnicity)
+
+@app.route("/characters/nationality/<string:nationality>", methods=["GET"])
+def get_characters_nationality(nationality):
+        return get_nationality(nationality)
+
+@app.route("/characters/affliaition/<string:affliation>", methods=["GET"])
+def get_characters_affiliation(affiliation):
+        return get_affiliation(affiliation)
+
+        
 @app.errorhandler(404)
 def resource_not_found(e):
         return jsonify(error=str(e)), 404

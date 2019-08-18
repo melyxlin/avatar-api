@@ -1,34 +1,18 @@
 from dataload import *
 from flask import jsonify
 
-class charactersFilter:
-    def __init__(self):
-        self.__bending = ['Waterbending', 'Earthbending', 'Firebending', 'Airbending', 'Metalbending', 'Bloodbending']
-        self.__gender = ['male', 'female']
-        self.__element = ['Water', 'Fire', 'Air', 'Earth']
-    
-    def get_bendings(self):
-        return self.__bending
-    
-    def get_genders(self):
-        return self.__gender
-
-    def get_ethnicity(self):
-        return self.__element
-
-
-def all_characters():
+def get_all_characters():
     characters_data = load_characters()
     return jsonify(characters_data)
 
-def character(name):
+def get_specific_character(name):
     character_data  = load_characters()
     for character in character_data:
         if character["name"] == name:
             return jsonify(character)
     return None
 
-def benders(bending):
+def get_benders(bending):
     characters_data = load_characters()
     characters = []
     for character in characters_data:
@@ -36,7 +20,7 @@ def benders(bending):
             characters.append(character)
     return jsonify(characters)
     
-def gender(gender):
+def get_gender(gender):
     characters_data = load_characters()
     characters = []
     for character in characters_data:
@@ -44,11 +28,27 @@ def gender(gender):
            characters.append(character)
     return jsonify(characters)
 
-def element(element):
+def get_ethnicity(ethnicity):
     characters_data = load_characters()
     characters = []
     for character in characters_data:
-        if character['element'] == element:
+        if character['ethnicity'] == ethnicity:
+            characters.append(character)
+    return jsonify(characters)
+
+def get_nationality(nationality):
+    characters_data = load_characters()
+    characters = []
+    for character in characters_data:
+        if character['nationality'] == nationality:
+            characters.append(character)
+    return jsonify(characters)
+
+def get_affiliation(affiliation):
+    characters_data = load_characters()
+    characters = []
+    for character in characters_data:
+        if affiliation in character['affiliation']:
             characters.append(character)
     return jsonify(characters)
         
