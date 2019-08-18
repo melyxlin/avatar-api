@@ -47,9 +47,9 @@ jobs:
       - run:
           name: run tests
           command: |
+            python3 -m venv venv
             source venv/bin/activate
-            pip install pytest
-            python -m pytest ./tests/test.py
+            python3 -m pytest ./tests/test.py
 
       - store_artifacts:
           path: test-reports
