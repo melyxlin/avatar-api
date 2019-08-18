@@ -48,6 +48,7 @@ jobs:
           name: run tests
           command: |
             source venv/bin/activate
+            pip install pytest
             python -m pytest ./tests/test.py
 
       - store_artifacts:
