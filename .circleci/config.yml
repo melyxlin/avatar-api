@@ -49,6 +49,7 @@ jobs:
           command: |
             source venv/bin/activate
             cd tests
+            pip install pytest
             pytest --setup-show test.py
 
       - store_artifacts:
