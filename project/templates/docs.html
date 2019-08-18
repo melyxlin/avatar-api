@@ -48,21 +48,21 @@
             <hr>
             <h4 class="header col s12 light">ROUTES</h4>
             <div class="col s5 m10">
-                    <p>All routes must be prefixed with <code style="background-color: blanchedalmond">https://www.avatarapi.com/v1/</code></p>
+                    <p>All routes must be prefixed with <code style="background-color: blanchedalmond">https://www.avatarapi/herokuapp.com</code></p>
                   </div>
                   <h5 class="header col s12 light">Characters Route</h5>
                   <div class="col s5 m10">
-                      <div style="background-color: blanchedalmond">
+                      <div class="URL" style="background-color: blanchedalmond">
                             <code style="font-size: 20px">GET /characters</code>
                     
                     </div>
                       
                     <p style="  font-style: italic;">Returns all characters.</p>
                   </div>
-                  <h5 class="header col s12 light">Filter Characters</h5>
+                  <h5 class="header col s12 light">Characters Route (using a filter)</h5>
                   <div class="col s5 m10">
-                      <div style="background-color: blanchedalmond">
-                            <pre><code style="font-size: 20px;">GET /characters/param/value</code></pre>
+                      <div class="URL" style="background-color: blanchedalmond">
+                            <pre><code style="font-size: 20px; ">GET /characters/param/{value}</code></pre>
                     
                     </div>
 
@@ -83,29 +83,78 @@
                                 <td></td>
                               </tr>
                               <tr>
-                                <td><code>gender</code></td>
-                                <td>string</td>
+                                <td><code class = "params">gender</code></td>
+                                <td class = "value">string</td>
                                 <td></td>
                               </tr>
                               <tr>
-                                <td><code>ethnicity</code></td>
-                                <td>string</td>
+                                <td><code class="params">ethnicity</code></td>
+                                <td class = "value">string</td>
                                 <td></td>
                               </tr>
                               <tr>
-                                    <td><code>nationality</code></td>
-                                    <td>string</td>
+                                    <td><code class="params">nationality</code></td>
+                                    <td class = "value">string</td>
                                     <td></td>
                                   </tr>
                                   <tr>
-                                        <td><code>affiliation</code></td>
-                                        <td>string</td>
+                                        <td><code class = "params">affiliation</code></td>
+                                        <td class = "value">string</td>
                                         <td></td>
                                       </tr>
                             </tbody>
                           </table>
                                 
                   </div>
+
+                  <h5 class="header col s12 light">Character Route</h5>
+                  <div class="col s5 m10">
+                      <div class="URL" style="background-color: blanchedalmond">
+                            <code style="font-size: 20px">GET /character/{name}</code>
+                    
+                    </div>
+                      
+                    <p style="  font-style: italic;">Returns a specific character given a name.</p>
+                  </div>
+                  <h5 class="header col s12 light">Locations Route</h5>
+                  <div class="col s5 m10">
+                    <div class="URL" style="background-color: blanchedalmond">
+                          <code style="font-size: 20px">GET /locations</code>
+                  
+                  </div>
+                    
+                  <p style="  font-style: italic;">Returns all the locations.</p>
+                </div>
+
+                <h5 class="header col s12 light">Characters Route (using a filter)</h5>
+                  <div class="col s5 m10">
+                      <div class="URL" style="background-color: blanchedalmond">
+                            <pre><code style="font-size: 20px; ">GET /locations/param/{value}</code></pre>
+                    
+                    </div>
+
+                    <p style="  font-style: italic;">Returns all characters whose value matches the value of the given parameter.</p>
+                    <table>
+                            <thead>
+                              <tr>
+                                  <th>Param</th>
+                                  <th>Value</th>
+                                  <th>Description</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td><code class="params">nations</code></td>
+                                <td class = "value">string</td>
+                                <td></td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                                
+                  </div>
+                  
             
       </div>
       <br><br>
