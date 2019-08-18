@@ -48,8 +48,8 @@ jobs:
           name: run tests
           command: |
             source venv/bin/activate
+            pip install -r requirements.txt
             cd tests
-            pip install pytest
             pytest --setup-show test.py
 
       - store_artifacts:
