@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Last Airbender API</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+  integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo" style="padding-top: 8px"><embed src = "/static/img/avatarapilogo.svg" style="width: 200px "></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="#">Documentation</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header">Documentation</h1>
+      <div>
+            <h5 class="header col s12 light">Introduction</h5>
+            <div class="col s5 m10">
+              <p>This is the documentation for Version 1 (V1) of the Avatar API, originally released in September of 2019</p>
+          </div>
+
+            <h5 class="header col s12 light">Reponse Format</h5>
+            <div class="col s5 m10">
+              <p>The default response format is JSON</p>
+            </div>
+            <h5 class="header col s12 light">Authentication</h5>
+            <div class="col s5 m10">
+              <p>This is an open API, which means that no authentication is required to query the API for data. Therefore, there is only support for GET-ing data.</p>
+            </div>
+    
+            <hr>
+            <h4 class="header col s12 light">ROUTES</h4>
+            <div class="col s5 m10">
+                    <p>All routes must be prefixed with <code style="background-color: blanchedalmond">https://www.avatarapi.com/v1/</code></p>
+                  </div>
+                  <h5 class="header col s12 light">Characters Route</h5>
+                  <div class="col s5 m10">
+                      <div style="background-color: blanchedalmond">
+                            <code style="font-size: 20px">GET /characters</code>
+                    
+                    </div>
+                      
+                    <p style="  font-style: italic;">Returns all characters.</p>
+                  </div>
+                  <h5 class="header col s12 light">Filter Characters</h5>
+                  <div class="col s5 m10">
+                      <div style="background-color: blanchedalmond">
+                            <pre><code style="font-size: 20px;">GET /characters/param/value</code></pre>
+                    
+                    </div>
+
+                    <p style="  font-style: italic;">Returns all characters whose value matches the value of the given parameter.</p>
+                    <table>
+                            <thead>
+                              <tr>
+                                  <th>Param</th>
+                                  <th>Value</th>
+                                  <th>Description</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td><code class="params">benders</code></td>
+                                <td class = "value">string</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td><code>gender</code></td>
+                                <td>string</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td><code>ethnicity</code></td>
+                                <td>string</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                    <td><code>nationality</code></td>
+                                    <td>string</td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                        <td><code>affiliation</code></td>
+                                        <td>string</td>
+                                        <td></td>
+                                      </tr>
+                            </tbody>
+                          </table>
+                                
+                  </div>
+            
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/static.js/materialize.js"></script>
+  <script src="/static/js/init.js"></script>
+  -->
+
+  </body>
+</html>

@@ -11,8 +11,12 @@ def mainPage():
     return render_template('index.html')
 
 @app.route("/about", methods=['GET'])
-def docPage():
+def aboutPage():
         return render_template('about.html')
+
+@app.route("/docs", methods=["GET"])
+def docsPage():
+        return render_template('docs.html')
 
 @app.route("/characters", methods=['GET'])
 def get_characters():
@@ -27,7 +31,7 @@ def get_character(name):
                 abort(404, description="character not found") 
 
 
-@app.route("/characters/bending/<string:bending>", methods=['GET'])
+@app.route("/characters/benders/<string:bending>", methods=['GET'])
 def get_characters_bending(bending):
         return get_benders(bending)
 

@@ -12,3 +12,13 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.params
+{
+  background-color: lightgray;
+}
+
+.value
+{
+  font-style: italic;
+}
