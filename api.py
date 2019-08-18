@@ -1,5 +1,6 @@
 from flask import Flask, request,abort, render_template
 from character import *
+from locations import *
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -47,7 +48,15 @@ def get_characters_nationality(nationality):
 def get_characters_affiliation(affiliation):
         return get_affiliation(affiliation)
 
-        
+
+@app.route("/locations", method=["GET"])
+def get_locations():
+        return get_all_locations()
+
+@app.route("/locations/nation/<string:nation>", methods=["GET"])
+def get_locations_nation(nation):
+        return get_locations_nation()
+
 @app.errorhandler(404)
 def resource_not_found(e):
         return jsonify(error=str(e)), 404
