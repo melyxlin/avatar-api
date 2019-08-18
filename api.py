@@ -48,8 +48,7 @@ def get_characters_nationality(nationality):
 def get_characters_affiliation(affiliation):
         return get_affiliation(affiliation)
 
-
-@app.route("/locations", method=["GET"])
+@app.route("/locations", methods=["GET"])
 def get_locations():
         return get_all_locations()
 
