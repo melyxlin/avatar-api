@@ -1,0 +1,1 @@
+pytest --setup-show test.py
