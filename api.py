@@ -1,6 +1,5 @@
 from flask import Flask, request,abort, render_template
-from character import *
-from locations import *
+from implementations import *
 
 app = Flask(__name__)
 app.config["DEBUG"] = True

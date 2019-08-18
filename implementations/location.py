@@ -1,4 +1,4 @@
-from dataload import *
+from data import *
 from flask import jsonify
 
 def get_all_locations():
