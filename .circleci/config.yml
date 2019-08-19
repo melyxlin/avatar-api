@@ -49,6 +49,7 @@ jobs:
       - run:
           name: run tests
           command: |
+          cd ~/avatar-api
             pip install -r requirements.txt
             cd tests
             pytest --setup-show test.py
