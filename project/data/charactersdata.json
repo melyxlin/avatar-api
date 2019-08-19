@@ -1,7 +1,458 @@
 [
-    {"name":"Aang", "ethnicity":"Air Nomad", "nationality":"Southern Air Temple", "bending":["Airbending", "Waterbending", "Earthbending", "Firebending"], "gender":"Male", "year of birth":"12 BG", "year of death":"153 AG", "roles":["Avatar", "Co-founder of the United Republic of Nations", "Air Nomad Culture Teacher", "Airbending instructor"], "aliases":["Twinkle Toes", "Kuzon"], "affiliations":["Air Nomads", "Air Acolytes", "Team Avatar"], "weapons":["Glider Staff"], "fighting styles":["Airbending", "Waterbending (Northern Style)", "Waterbending (Southern Style)", "Earthbending (Chu Gar Praying Mantis Kung Fu)", "Firebending (Dancing Dragon)", "Energybending"]},
-    {"name": "Katara", "ethnicity": "Water Tribe", "nationality": "Southern Water Tribe", "bending":["Waterbending", "Bloodbending"], "gender":"Female", "year of birth":"85 AG", "year of death":"", "roles":["Waterbending Instructor", "Master Healer"], "aliases":[]},
-    {"name": "Zuko", "ethnicity": "Fire Nation", "nationality": "Fire Nation", "bending":["Firebending"], "gender":"Male", "year of birth":"83 AG", "year of death":"", "roles":["Fire Lord", "Co-founder of the United Republic of Nations", "Tea Shop Assistant", "Ambassador", "Firebending Instructor"], "aliases":["Lee", "Zuzu", "Blue Spirit"], "affiliations":["Fire Nation Royal Family", "Team Avatar"], "weapons":["Dual Broadswords"]},
-    {"name": "Sokka", "ethnicity": "Water Tribe", "nationality":"Southern Water Tribe", "bending":["Nonbender"], "gender":"Male", "year of birth":"84 AG", "year of death":"158 AG - 170 AG", "roles":["Southern Water Tribe representative on the United Republic Council", "Chairman of the United Republic Council", "Chieftain of Southern Water Tribe"], "aliases":["Wang Fire", "Captain Boomerang"]},
-    {"name": "Toph", "ethnicity":"Earth Kingdom", "nationality":"Earth Kingdom", "bending":["Earthbending", "Metalbending"], "gender":"Female", "year of birth":"87 AG - 88 AG", "year of death":"", "roles":["Earthbending Instructor", "Professional Earthbending Fighter", "Republic City Chief of Police", "Founder of Beifong Metalbending Academy"], "aliases":["The Blind Bandit"]}
+    {
+        "name": "Aang",
+        "ethnicity": "Air Nomad",
+        "nationality": "Southern Air Temple",
+        "bending": [
+            "Airbending",
+            "Waterbending",
+            "Earthbending",
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "12 BG",
+        "year of death": "153 AG",
+        "roles": [
+            "Avatar",
+            "Co-founder of the United Republic of Nations",
+            "Air Nomad Culture Teacher",
+            "Airbending instructor"
+        ],
+        "aliases": [
+            "Twinkle Toes",
+            "Kuzon"
+        ],
+        "affiliations": [
+            "Air Nomads",
+            "Air Acolytes",
+            "Team Avatar"
+        ],
+        "weapons": [
+            "Glider Staff"
+        ],
+        "fighting styles": [
+            "Airbending",
+            "Waterbending (Northern Style)",
+            "Waterbending (Southern Style)",
+            "Earthbending (Chu Gar Praying Mantis Kung Fu)",
+            "Firebending (Dancing Dragon)",
+            "Energybending"
+        ]
+    },
+    {
+        "name": "Aiwei",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Earthbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Adivisor to Suyin Beifong",
+            "Red Lotus Mole",
+            "Truth Seer"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Metal Clan",
+            "Red Lotus"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Earthbending",
+            "MetalBending"
+        ]
+    },
+    {
+        "name": "Ahnah",
+        "ethnicity": "Water Tribe",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Waterbending"
+        ],
+        "gender": "Female",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": [
+            "Waterbending"
+        ]
+    },
+    {
+        "name": "Amon",
+        "ethnicity": "Water Tribe",
+        "nationality": "Northern Water Tribe",
+        "bending": [
+            "Waterbending"
+        ],
+        "gender": "Male",
+        "year of birth": "130 AG",
+        "year of death": "170 AG",
+        "roles": [
+            "Leader of the Equalist"
+        ],
+        "aliases": [
+            "Noatuk"
+        ],
+        "affiliations": [
+            "Equalist"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Waterbending (Northern Style)",
+            "Bloodbending",
+            "Bloodbending",
+            "Chi Blocking"
+        ]
+    },
+    {
+        "name": "Arnook",
+        "ethnicity": "Water Tribe",
+        "nationality": "Northern Water Tribe",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "50 AG",
+        "year of death": "",
+        "roles": [
+            "Chief of the Northern and Southern Water Tribe"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Northern Water Tribe"
+        ],
+        "weapons": [
+            "Water Tribe Weapons"
+        ],
+        "fighting styles": []
+    },
+    {
+        "name": "Asami",
+        "ethnicity": "Fire Nation",
+        "nationality": "Republic Nation",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Female",
+        "year of birth": "152 AG",
+        "year of death": "",
+        "roles": [
+            "Chief Executive Officer of Future Industries",
+            "Engineer"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Future Industries",
+            "Team Avatar"
+        ],
+        "weapons": [
+            "Electrified Hand Glove"
+        ],
+        "fighting styles": [
+            "Hand to Hand Combat"
+        ]
+    },
+    {
+        "name": "Azula",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Female",
+        "year of birth": "85 AG",
+        "year of death": "",
+        "roles": [
+            "Princess of the Fire Nation",
+            "Head of the Dai Li",
+            "Leader of the Fire Warriors",
+            "Leader of Azula's Team"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Fire Nation Royal Family"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Firebending",
+            "Lightening Generation"
+        ]
+    },
+    {
+        "name": "Azulon",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "0 AG",
+        "year of death": "95 AG",
+        "roles": [
+            "Fire Lord"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Fire Nation Royal Family"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Firebending"
+        ]
+    },
+    {
+        "name": "Bataar",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Architect of Zaofu"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Metal Clan"
+        ],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
+        "name": "Baatar Jr.",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Engineer",
+            "Second-in-command of the Earth Empire military"
+        ],
+        "aliases": [
+            "Baatar",
+            "Junior"
+        ],
+        "affiliations": [
+            "Metal Clan",
+            "Military of the Earth Empire"
+        ],
+        "weapons": [
+            "Mecha Suit"
+        ],
+        "fighting styles": []
+    },
+    {
+        "name": "Baraz",
+        "ethnicity": "Fire Nation",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": [
+            "Firebending"
+        ]
+    },
+    {
+        "name": "Bato",
+        "ethnicity": "Water Tribe",
+        "nationality": "Southern Water Tribe",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Southern Water Tribe Warrion"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Southern Water Tribe"
+        ],
+        "weapons": [
+            "Water Tribe Weapons"
+        ],
+        "fighting styles": []
+    },
+    {
+        "name": "The Big Bad Hippo",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Earthbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Earthkingdom soldier",
+            "Professional Earthbending Fighter"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": [
+            "Earthbending"
+        ]
+    },
+    {
+        "name": "Bolin",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Earthbending"
+        ],
+        "gender": "Male",
+        "year of birth": "154 AG",
+        "year of death": "",
+        "roles": [
+            "Fire Ferrets' Earthbender and Captain",
+            "Lead actor in The Adventures of Nuktuk: Hero of the South",
+            "Earth Empire Corporal"
+        ],
+        "aliases": [
+            "Bo",
+            "Turtle Duck"
+        ],
+        "affiliations": [
+            "Team Avatar",
+            "Fire Ferrets",
+            "Military of the Earth Empire",
+            "Triple Threat Triad"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Earthbending (Pro-bending style)",
+            "Earthbending (Hung Gar Kung Fu)",
+            "Lavabending"
+        ]
+    },
+    {
+        "name": "The Boulder",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Earthbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Earthkingdom soldier",
+            "Professional Earthbending Fighter"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": [
+            "Earthbending (Hung Gar Kung Fu)"
+        ]
+    },
+    {
+        "name": "Katara",
+        "ethnicity": "Water Tribe",
+        "nationality": "Southern Water Tribe",
+        "bending": [
+            "Waterbending"
+        ],
+        "gender": "Female",
+        "year of birth": "85 AG",
+        "year of death": "",
+        "roles": [
+            "Waterbending Instructor",
+            "Master Healer"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Southern Water Tribe",
+            "Team Avatar"
+        ]
+    },
+    {
+        "name": "Zuko",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "83 AG",
+        "year of death": "",
+        "roles": [
+            "Fire Lord",
+            "Co-founder of the United Republic of Nations",
+            "Tea Shop Assistant",
+            "Ambassador",
+            "Firebending Instructor"
+        ],
+        "aliases": [
+            "Lee",
+            "Zuzu",
+            "Blue Spirit"
+        ],
+        "affiliations": [
+            "Fire Nation Royal Family",
+            "Team Avatar"
+        ],
+        "weapons": [
+            "Dual Broadswords"
+        ]
+    },
+    {
+        "name": "Sokka",
+        "ethnicity": "Water Tribe",
+        "nationality": "Southern Water Tribe",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "84 AG",
+        "year of death": "158 AG - 170 AG",
+        "roles": [
+            "Southern Water Tribe representative on the United Republic Council",
+            "Chairman of the United Republic Council",
+            "Chieftain of Southern Water Tribe"
+        ],
+        "aliases": [
+            "Wang Fire",
+            "Captain Boomerang"
+        ]
+    },
+    {
+        "name": "Toph",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Earthbending"
+        ],
+        "gender": "Female",
+        "year of birth": "87 AG - 88 AG",
+        "year of death": "",
+        "roles": [
+            "Earthbending Instructor",
+            "Professional Earthbending Fighter",
+            "Republic City Chief of Police",
+            "Founder of Beifong Metalbending Academy"
+        ],
+        "aliases": [
+            "The Blind Bandit"
+        ]
+    }
 ]
