@@ -30,9 +30,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            cd venv/bin
-            python3 -m venv venv
-            . venv/bin/activate
+            source venv/bin/activate
             cd ~/avatar-api
             pip install -r requirements.txt
 
@@ -45,11 +43,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            cd venv/bin
-            python3 -m venv venv
-            . venv/bin/activate
-            # cd ~/avatar-api
-            # pip install -r requirements.txt
+            source venv/bin/activate
             cd ~/avatar-api/tests
             python -m pytest test.py
 
