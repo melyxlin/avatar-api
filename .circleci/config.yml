@@ -49,8 +49,8 @@ jobs:
       - run:
           name: run tests
           command: |
-            pip freeze
             cd ~/avatar-api
+            pip freeze
             cd tests
             python -m pytest tests/
 
