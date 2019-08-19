@@ -49,9 +49,12 @@ jobs:
       - run:
           name: run tests
           command: |
+            cd venv/bin
+            python3 -m venv venv
+            . venv/bin/activate
             cd ~/avatar-api
-            pip freeze
-            cd tests
+            pip install -r requirements.txt
+            cd ~/avatar-api/tests
             python -m pytest tests/
 
       - store_artifacts:
