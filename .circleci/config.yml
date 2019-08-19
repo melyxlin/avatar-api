@@ -50,9 +50,8 @@ jobs:
           name: run tests
           command: |
             cd ~/avatar-api
-            pip install -r requirements.txt
             cd tests
-            pytest --setup-show test.py
+            python -m pytest tests/
 
       - store_artifacts:
           path: test-reports
