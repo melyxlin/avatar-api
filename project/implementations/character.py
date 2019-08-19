@@ -48,7 +48,7 @@ def get_affiliation(affiliation):
     characters_data = load_characters()
     characters = []
     for character in characters_data:
-        if affiliation in character['affiliation']:
+        if affiliation in character['affiliations']:
             characters.append(character)
     return jsonify(characters)
         

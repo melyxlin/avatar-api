@@ -8,7 +8,7 @@ def get_all_locations():
 def get_nation(nation):
     locations_data = load_locations()
     locations = []
-    for location in load_locations():
+    for location in locations_data:
         if location['nation'] == nation:
             locations.append(location)
     return jsonify(locations)

@@ -55,7 +55,7 @@ def get_characters_nationality(nationality):
         return get_nationality(nationality)
 
 #endpoint to filter characters based on affiliation
-@app.route("/characters/affliaition/<string:affliation>", methods=["GET"])
+@app.route("/characters/affiliations/<string:affiliation>", methods=["GET"])
 def get_characters_affiliation(affiliation):
         return get_affiliation(affiliation)
 
@@ -67,7 +67,7 @@ def get_locations():
 #endpoint to filter locations based on nation
 @app.route("/locations/nation/<string:nation>", methods=["GET"])
 def get_locations_nation(nation):
-        return get_locations_nation()
+        return get_nation(nation)
 
 #error handling message
 @app.errorhandler(404)

@@ -433,6 +433,10 @@
         "aliases": [
             "Wang Fire",
             "Captain Boomerang"
+        ],
+        "affiliations": [
+            "Fire Nation Royal Family",
+            "Team Avatar"
         ]
     },
     {
@@ -453,6 +457,10 @@
         ],
         "aliases": [
             "The Blind Bandit"
+        ],
+        "affiliations": [
+            "Fire Nation Royal Family",
+            "Team Avatar"
         ]
     }
 ]
