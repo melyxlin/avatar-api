@@ -50,6 +50,7 @@ jobs:
           name: run tests
           command: |
             cd tests
+            pip install pytest
             pytest --setup-show test.py
 
       - store_artifacts:
