@@ -43,9 +43,8 @@ def test_all_characters_api(client):
     AND check if the amount of data returns equal the amount of data in the file
     """
     response = client.get("/characters")
-    assert response.status_code == 200
     data = json.loads(response.data)
-    assert len(data) == 19
+    assert len(data) == 19 and response.status_code == 200
 
 def test_all_locations_api(client):
     """
@@ -55,9 +54,8 @@ def test_all_locations_api(client):
     AND check if the amount of data returns equal the amount of data in the file
     """
     response = client.get("/locations")
-    assert response.status_code == 200
     data = json.loads(response.data)
-    assert len(data) == 4
+    assert response.status_code == 200 and len(data) == 4
 
 def test_characters_filters_api(client):
     """
