@@ -34,6 +34,8 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             cd ..
+            cd ..
+            ls
             pip install -r requirements.txt
 
       - save_cache:
