@@ -57,8 +57,8 @@ jobs:
           path: test-reports
           destination: test-reports
 
-      - run:
-          name: Deploy Master to Heroku
-          command: |
-            git pull https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+      # - run:
+      #     name: Deploy Master to Heroku
+      #     command: |
+      #       git pull https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+      #       git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
