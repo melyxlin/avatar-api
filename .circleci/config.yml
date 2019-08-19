@@ -49,8 +49,8 @@ jobs:
       - run:
           name: run tests
           command: |
+            pip install -r requirements.txt
             cd tests
-            pip install pytest
             pytest --setup-show test.py
 
       - store_artifacts:
