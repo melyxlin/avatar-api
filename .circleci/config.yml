@@ -56,8 +56,8 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
-          
+
       - run:
           name: Deploy Master to Heroku
           command: |
-            git push https://git.heroku.com/avatarapi.git master
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
