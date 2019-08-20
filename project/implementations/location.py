@@ -11,4 +11,6 @@ def get_nation(nation):
     for location in locations_data:
         if location['nation'] == nation:
             locations.append(location)
+    if len(locations) == 0:
+            return None
     return jsonify(locations)

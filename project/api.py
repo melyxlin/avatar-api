@@ -87,7 +87,11 @@ def get_locations():
 #endpoint to filter locations based on nation
 @app.route("/locations/nation/<string:nation>", methods=["GET"])
 def get_locations_nation(nation):
-        return get_nation(nation)
+        return_nations = get_nation(nation)
+        if return_nations != None:
+                return return_nations
+        else:
+                abort(404, description="bending not found") 
 
 #endpoint to get all bendings
 @app.route("/bendings", methods=["GET"])
