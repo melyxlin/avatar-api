@@ -63,7 +63,6 @@ def test_all_bendings_api(client):
         THEN check if the response is valid
         """
         response = client.get("/bendings")
-        # data = json.loads(response.data)
         assert response.status_code ==200
 
 def test_character_api(client):
