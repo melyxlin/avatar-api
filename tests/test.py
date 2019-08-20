@@ -67,6 +67,19 @@ def test_all_bendings_api(client):
         data = json.loads(response.data)
         assert response.status_code ==200
 
+def test_character_api(client):
+        """
+         GIVEN a Flask Application
+         WHEN the '/characters' is requested
+         AND a name is provided
+         THEN check if the response is valid
+         AND check if the response has only one character
+        """
+        name = "Katara"
+        response = client.get("/characters/"+name)
+        data = [json.loads(response.data)]
+        assert response.status_code == 200 and len(data) == 1
+
 def test_characters_filters_api(client):
     """
     GIVEN a Flask Application
@@ -81,6 +94,20 @@ def test_characters_filters_api(client):
         response = client.get(URL)
         assert response.status_code == 200
 
+def test_characters_filter_api_error(client):
+        """
+        GIVEN a Flask Application
+        WHEN the '/characters' is requested
+        AND a param is provided
+        AND a bad value is provided
+        THEN check if the response is not valid
+        """
+        filters = {"benders":"Hello",  "gender":"Hello", "ethnicity":"Hello", "nationality":"Hello", "affiliations":"Hello"}
+        for filter in filters:
+                URL = "/characters/" + filter + "/" + filters.get(filter)
+                response = client.get(URL)
+                assert response.status_code == 404
+
 def test_locations_filters_api(client):
     """
     GIVEN a Flask Application
@@ -94,3 +121,28 @@ def test_locations_filters_api(client):
         URL = "/locations/" + filter + "/" + filters.get(filter)
         response = client.get(URL)
         assert response.status_code == 200
+
+def test_locations_filters_api_error(client):
+    """
+    GIVEN a Flask Application
+    WHEN the '/locations' is requested
+    AND a param is provided
+    AND a bad value is provided
+    THEN check if the response is not valid
+    """
+    filters = {"nation":"Hello"}
+    for filter in filters:
+        URL = "/locations/" + filter + "/" + filters.get(filter)
+        response = client.get(URL)
+        assert response.status_code == 404
+
+def test_bending_api(client):
+    """
+    GIVEN a Flask Application
+    WHEN the '/bendings' is requested
+    AND a name is provided
+    THEN check if the response is valid
+    """
+    name = "Earthbending"
+    response = client.get("/bendings/"+name)
+    assert response.status_code == 200

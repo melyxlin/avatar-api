@@ -14,3 +14,10 @@ def get_nation(nation):
     if len(locations) == 0:
             return None
     return jsonify(locations)
+
+def get_specific_location(name):
+        location_data = load_locations
+        for location in location_data:
+                if location["name"] == name:
+                        return jsonify(location)
+        return None

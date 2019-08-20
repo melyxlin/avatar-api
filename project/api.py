@@ -98,6 +98,7 @@ def get_locations_nation(nation):
 def get_bendings():
         return get_all_bendings()
 
+#endpoint to get a specific bending
 @app.route("/bendings/<string:name>", methods=["GET"])
 def get_bending(name):
         return_bending = get_specific_bending(name)
