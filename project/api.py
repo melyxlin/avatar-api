@@ -26,38 +26,58 @@ def get_characters():
     return get_all_characters()
 
 #endpoint to get a specific character based on name
-@app.route("/character/<string:name>", methods=['GET'])
+@app.route("/characters/<string:name>", methods=['GET'])
 def get_character(name):
-        return_characters =  get_specific_character(name)
-        if return_characters != None:
-                return return_characters
+        return_character =  get_specific_character(name)
+        if return_character != None:
+                return return_character
         else:
-                abort(404, description="character not found") 
+                abort(404, description="characters not found") 
 
 #endpoint to filter characters based on bending
 @app.route("/characters/benders/<string:bending>", methods=['GET'])
 def get_characters_bending(bending):
-        return get_benders(bending)
+        return_characters =  get_benders(bending)
+        if return_characters != None:
+                return return_characters
+        else:
+                abort(404, description="characters not found") 
 
 #endpoint to filter characters based on gender
 @app.route("/characters/gender/<string:gender>", methods=["GET"])
 def get_characters_gender(gender):
-        return get_gender(gender)
+        return_characters = get_gender(gender)
+        if return_characters != None:
+                return return_characters
+        else:
+                abort(404, description="characters not found") 
 
 #endpoint to filter characters based on ethnicity
 @app.route("/characters/ethnicity/<string:ethnicity>", methods=["GET"])
 def get_characters_ethnicity(ethnicity):
-        return get_ethnicity(ethnicity)
+        return_characters = get_ethnicity(ethnicity)
+        if return_characters != None:
+                return return_characters
+        else:
+                abort(404, description="characters not found") 
 
 #endpoint to filter characters based on nationality
 @app.route("/characters/nationality/<string:nationality>", methods=["GET"])
 def get_characters_nationality(nationality):
-        return get_nationality(nationality)
+        return_characters = get_nationality(nationality)
+        if return_characters != None:
+                return return_characters
+        else:
+                abort(404, description="characters not found") 
 
 #endpoint to filter characters based on affiliation
 @app.route("/characters/affiliations/<string:affiliation>", methods=["GET"])
 def get_characters_affiliation(affiliation):
-        return get_affiliation(affiliation)
+        return_characters = get_affiliation(affiliation)
+        if return_characters != None:
+                return return_characters
+        else:
+                abort(404, description="characters not found") 
 
 #endpoint to get all locations
 @app.route("/locations", methods=["GET"])
@@ -68,6 +88,19 @@ def get_locations():
 @app.route("/locations/nation/<string:nation>", methods=["GET"])
 def get_locations_nation(nation):
         return get_nation(nation)
+
+#endpoint to get all bendings
+@app.route("/bendings", methods=["GET"])
+def get_bendings():
+        return get_all_bendings()
+
+@app.route("/bendings/<string:name>", methods=["GET"])
+def get_bending(name):
+        return_bending = get_specific_bending(name)
+        if return_bending != None:
+                return return_bending
+        else:
+                abort(404, description="bending not found") 
 
 #error handling message
 @app.errorhandler(404)

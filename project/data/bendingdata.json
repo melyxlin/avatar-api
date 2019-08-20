@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Earthbending",
+        "source": "Earth",
+        "learned from": "Badger Moles",
+        "alternative styles": [
+            "Metalbending",
+            "Lavabending",
+            "Mudbending",
+            "Sandbending"
+        ],
+        "abilities": {
+            "general": [
+                "Earth and Stone Levitation",
+                "Earth Block",
+                "Earth Column",
+                "Earth Compression",
+                "Earth Gaunlet",
+                "Earth hand/mannequin",
+                "Earth Launch",
+                "Earth Material Manipulation",
+                "Earth Shelter",
+                "Earth Wall",
+                "Earthquakes/Fissures",
+                "Quicksand",
+                "Rock Hanging",
+                "Rock Slide",
+                "Sand Sprout",
+                "Slab shackles"
+            ],
+            "advanced":
+            [
+                "Dust Cloud",
+                "Dust Stepping",
+                "Earth Armour",
+                "Earth Bomb",
+                "Earth Tunneling",
+                "Earth Wave",
+                "Magnetization",
+                "Remote Earthbending"
+            ],
+            "avatar level":
+            [
+                "Compressed Rock Bullets",
+                "Enhanced Earth Armour",
+                "Enhanced Earth Levitation",
+                "Powered Compression", 
+                "Tectonics"
+            ],
+            "special techniques":
+            [
+                "Rock Shoes", 
+                "Rock Gloves",
+                "Seismic Sense"
+            ]
+        },
+        "weapons":
+        [
+            "Dadao", 
+            "Meteor Hammers", 
+            "Fans"
+        ], 
+        "weaknesses":
+        [
+            "Reliance on Earth",
+            "Reliance on Lower Body"
+        ]
+        }
+    ]

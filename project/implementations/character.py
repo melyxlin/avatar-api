@@ -18,6 +18,8 @@ def get_benders(bending):
     for character in characters_data:
         if bending in character['bending']:
             characters.append(character)
+    if len(characters) == 0:
+        return None
     return jsonify(characters)
     
 def get_gender(gender):
@@ -26,6 +28,8 @@ def get_gender(gender):
     for character in characters_data:
         if character['gender'] == gender:
            characters.append(character)
+    if len(characters) == 0:
+        return None
     return jsonify(characters)
 
 def get_ethnicity(ethnicity):
@@ -34,6 +38,8 @@ def get_ethnicity(ethnicity):
     for character in characters_data:
         if character['ethnicity'] == ethnicity:
             characters.append(character)
+    if len(characters) == 0:
+        return None
     return jsonify(characters)
 
 def get_nationality(nationality):
@@ -42,6 +48,8 @@ def get_nationality(nationality):
     for character in characters_data:
         if character['nationality'] == nationality:
             characters.append(character)
+    if len(characters) == 0:
+            return None
     return jsonify(characters)
 
 def get_affiliation(affiliation):
@@ -50,6 +58,8 @@ def get_affiliation(affiliation):
     for character in characters_data:
         if affiliation in character['affiliations']:
             characters.append(character)
+    if len(characters) == 0:
+        return None
     return jsonify(characters)
         
 
