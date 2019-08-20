@@ -39,7 +39,7 @@ def get_characters_bending(bending):
         return_characters =  get_benders(bending)
         if return_characters != None:
                 return return_characters
-        abort(404, description="characters not found") 
+        abort(404, description="characters not found")
 
 #endpoint to filter characters based on gender
 @app.route("/characters/gender/<string:gender>", methods=["GET"])
@@ -106,7 +106,7 @@ def get_bending(name):
         if return_bending != None:
                 return return_bending
         abort(404, description="bending not found")
-      
+     
 #error handling message
 @app.errorhandler(404)
 def resource_not_found(e):

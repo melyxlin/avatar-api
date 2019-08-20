@@ -145,12 +145,10 @@ def test_locations_filters_api_error(client):
     AND a bad value is provided
     THEN check if the response is not valid
     """
-    filters = {"nation":"Hello"}
-    for filter in filters:
-        URL = "/locations/" + filter + "/" + filters.get(filter)
-        response = client.get(URL)
-        if response.status_code != 404:
-                 raise AssertionError()
+    URL = "/locations/nation/hello"
+    response = client.get(URL)
+    if response.status_code != 404:
+            raise AssertionError()
 
 def test_bending_api(client):
     """
