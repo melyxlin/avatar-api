@@ -84,6 +84,15 @@ def get_characters_affiliation(affiliation):
 def get_locations():
         return get_all_locations()
 
+#endpoint to get specific location
+@app.route("/locations/<string:name>", methods = ["GET"])
+def get_location(name):
+        return_location = get_specific_location(name)
+        if return_location != None:
+                return return_location
+        else:
+                abort(404, description="location not found") 
+
 #endpoint to filter locations based on nation
 @app.route("/locations/nation/<string:nation>", methods=["GET"])
 def get_locations_nation(nation):

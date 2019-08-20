@@ -108,6 +108,12 @@ def test_characters_filter_api_error(client):
                 response = client.get(URL)
                 assert response.status_code == 404
 
+def test_location_api(client):
+        name = "Ember%20Island"
+        response = client.get("/locations/"+name)
+        data = [json.loads(response.data)]
+        assert response.status_code == 200 and len(data) == 1
+
 def test_locations_filters_api(client):
     """
     GIVEN a Flask Application
@@ -145,4 +151,5 @@ def test_bending_api(client):
     """
     name = "Earthbending"
     response = client.get("/bendings/"+name)
-    assert response.status_code == 200
+    data = [json.loads(response.data)]
+    assert response.status_code == 200 and len(data) == 1
