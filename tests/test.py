@@ -14,7 +14,8 @@ def test_home_page(client):
     THEN check if the response is valid
     """
     response = client.get("/")
-    assert response.status_code == 200
+    if response.status_code != 200:
+            raise AssertionError()
 
 def test_about_page(client):
     """
@@ -23,7 +24,8 @@ def test_about_page(client):
     THEN check if the response is valid
     """
     response = client.get("/about")
-    assert response.status_code == 200
+    if response.status_code != 200:
+            raise AssertionError()
 
 def test_docs_page(client):
     """
@@ -32,7 +34,8 @@ def test_docs_page(client):
     THEN check if the response is valid
     """
     response = client.get("/docs")
-    assert response.status_code == 200
+    if response.status_code != 200:
+            raise AssertionError()
 
 def test_all_characters_api(client):
     """
@@ -43,7 +46,8 @@ def test_all_characters_api(client):
     """
     response = client.get("/characters")
     data = json.loads(response.data)
-    assert len(data) == 19 and response.status_code == 200
+    if len(data) != 19 or response.status_code != 200:
+            raise AssertionError()
 
 def test_all_locations_api(client):
     """
@@ -54,7 +58,8 @@ def test_all_locations_api(client):
     """
     response = client.get("/locations")
     data = json.loads(response.data)
-    assert response.status_code == 200 and len(data) == 4
+    if response.status_code != 200 or len(data) != 4:
+            raise AssertionError()
 
 def test_all_bendings_api(client):
         """
@@ -63,7 +68,8 @@ def test_all_bendings_api(client):
         THEN check if the response is valid
         """
         response = client.get("/bendings")
-        assert response.status_code ==200
+        if response.status_code != 200:
+                raise AssertionError()
 
 def test_character_api(client):
         """
@@ -76,7 +82,8 @@ def test_character_api(client):
         name = "Katara"
         response = client.get("/characters/"+name)
         data = [json.loads(response.data)]
-        assert response.status_code == 200 and len(data) == 1
+        if response.status_code != 200 and len(data) != 1:
+                raise AssertionError()
 
 def test_characters_filters_api(client):
     """
@@ -90,7 +97,8 @@ def test_characters_filters_api(client):
     for filter in filters:
         URL = "/characters/" + filter + "/" + filters.get(filter)
         response = client.get(URL)
-        assert response.status_code == 200
+        if response.status_code != 200:
+                 raise AssertionError()
 
 def test_characters_filter_api_error(client):
         """
@@ -104,13 +112,15 @@ def test_characters_filter_api_error(client):
         for filter in filters:
                 URL = "/characters/" + filter + "/" + filters.get(filter)
                 response = client.get(URL)
-                assert response.status_code == 404
+                if response.status_code != 404:
+                         raise AssertionError()
 
 def test_location_api(client):
         name = "Ember%20Island"
         response = client.get("/locations/"+name)
         data = [json.loads(response.data)]
-        assert response.status_code == 200 and len(data) == 1
+        if response.status_code != 200 and len(data) != 1:
+                 raise AssertionError()
 
 def test_locations_filters_api(client):
     """
@@ -124,7 +134,8 @@ def test_locations_filters_api(client):
     for filter in filters:
         URL = "/locations/" + filter + "/" + filters.get(filter)
         response = client.get(URL)
-        assert response.status_code == 200
+        if response.status_code != 200:
+                 raise AssertionError()
 
 def test_locations_filters_api_error(client):
     """
@@ -138,7 +149,8 @@ def test_locations_filters_api_error(client):
     for filter in filters:
         URL = "/locations/" + filter + "/" + filters.get(filter)
         response = client.get(URL)
-        assert response.status_code == 404
+        if response.status_code != 404:
+                 raise AssertionError()
 
 def test_bending_api(client):
     """
@@ -150,4 +162,5 @@ def test_bending_api(client):
     name = "Earthbending"
     response = client.get("/bendings/"+name)
     data = [json.loads(response.data)]
-    assert response.status_code == 200 and len(data) == 1
+    if response.status_code != 200 and len(data) != 1:
+             raise AssertionError()

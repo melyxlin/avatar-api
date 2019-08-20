@@ -61,6 +61,3 @@ def get_affiliation(affiliation):
     if len(characters) == 0:
         return None
     return jsonify(characters)
-        
-
-    

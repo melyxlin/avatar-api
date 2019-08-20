@@ -55,7 +55,7 @@ def get_characters_ethnicity(ethnicity):
         return_characters = get_ethnicity(ethnicity)
         if return_characters != None:
                 return return_characters
-        abort(404, description="characters not found") 
+        abort(404, description="characters not found")
 
 #endpoint to filter characters based on nationality
 @app.route("/characters/nationality/<string:nationality>", methods=["GET"])
@@ -63,7 +63,7 @@ def get_characters_nationality(nationality):
         return_characters = get_nationality(nationality)
         if return_characters != None:
                 return return_characters
-        abort(404, description="characters not found") 
+        abort(404, description="characters not found")
 
 #endpoint to filter characters based on affiliation
 @app.route("/characters/affiliations/<string:affiliation>", methods=["GET"])
@@ -71,7 +71,7 @@ def get_characters_affiliation(affiliation):
         return_characters = get_affiliation(affiliation)
         if return_characters != None:
                 return return_characters
-        abort(404, description="characters not found") 
+        abort(404, description="characters not found")
 
 #endpoint to get all locations
 @app.route("/locations", methods=["GET"])
@@ -84,7 +84,7 @@ def get_location(name):
         return_location = get_specific_location(name)
         if return_location != None:
                 return return_location
-        abort(404, description="location not found") 
+        abort(404, description="location not found")
 
 #endpoint to filter locations based on nation
 @app.route("/locations/nation/<string:nation>", methods=["GET"])
@@ -92,7 +92,7 @@ def get_locations_nation(nation):
         return_nations = get_nation(nation)
         if return_nations != None:
                 return return_nations
-        abort(404, description="bending not found") 
+        abort(404, description="bending not found")
 
 #endpoint to get all bendings
 @app.route("/bendings", methods=["GET"])
@@ -105,8 +105,8 @@ def get_bending(name):
         return_bending = get_specific_bending(name)
         if return_bending != None:
                 return return_bending
-        abort(404, description="bending not found") 
-
+        abort(404, description="bending not found")
+        
 #error handling message
 @app.errorhandler(404)
 def resource_not_found(e):
