@@ -117,7 +117,7 @@
         <h5 class="header col s12 light">Character Route</h5>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
-            <code style="font-size: 20px">GET /character/{name}</code>
+            <code style="font-size: 20px">GET /characters/{name}</code>
 
           </div>
 
@@ -133,14 +133,14 @@
           <p style="  font-style: italic;">Returns all the locations.</p>
         </div>
 
-        <h5 class="header col s12 light">Characters Route (using a filter)</h5>
+        <h5 class="header col s12 light">Locations Route (using a filter)</h5>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
             <pre><code style="font-size: 20px; ">GET /locations/param/{value}</code></pre>
 
           </div>
 
-          <p style="  font-style: italic;">Returns all characters whose value matches the value of the given parameter.
+          <p style="  font-style: italic;">Returns all locations whose value matches the value of the given parameter.
           </p>
           <table>
             <thead>
@@ -161,6 +161,36 @@
             </tbody>
           </table>
 
+        </div>
+
+        <h5 class="header col s12 light">Location Route</h5>
+        <div class="col s5 m10">
+          <div class="URL" style="background-color: blanchedalmond">
+            <code style="font-size: 20px">GET /locations/{name}</code>
+
+          </div>
+
+          <p style="  font-style: italic;">Returns a specific location given a name.</p>
+        </div>
+
+        <h5 class="header col s12 light">Bendings Route</h5>
+        <div class="col s5 m10">
+          <div class="URL" style="background-color: blanchedalmond">
+            <code style="font-size: 20px">GET /bendings</code>
+
+          </div>
+
+          <p style="  font-style: italic;">Returns all bendings.</p>
+        </div>
+
+        <h5 class="header col s12 light">Bending Route</h5>
+        <div class="col s5 m10">
+          <div class="URL" style="background-color: blanchedalmond">
+            <code style="font-size: 20px">GET /bendings/{name}</code>
+
+          </div>
+
+          <p style="  font-style: italic;">Returns a specific bending given a name.</p>
         </div>
 
 
