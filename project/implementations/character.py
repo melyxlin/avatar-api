@@ -21,7 +21,7 @@ def get_benders(bending):
     if len(characters) == 0:
         return None
     return jsonify(characters)
-    
+  
 def get_gender(gender):
     characters_data = load_characters()
     characters = []

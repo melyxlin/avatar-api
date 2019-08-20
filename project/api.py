@@ -47,7 +47,7 @@ def get_characters_gender(gender):
         return_characters = get_gender(gender)
         if return_characters != None:
                 return return_characters
-        abort(404, description="characters not found") 
+        abort(404, description="characters not found")
 
 #endpoint to filter characters based on ethnicity
 @app.route("/characters/ethnicity/<string:ethnicity>", methods=["GET"])
@@ -106,7 +106,7 @@ def get_bending(name):
         if return_bending != None:
                 return return_bending
         abort(404, description="bending not found")
-        
+      
 #error handling message
 @app.errorhandler(404)
 def resource_not_found(e):
