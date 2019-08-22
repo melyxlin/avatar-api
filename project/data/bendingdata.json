@@ -34,8 +34,7 @@
                 "Water Whip",
                 "Wave"
             ],
-            "advanced":
-            [
+            "advanced": [
                 "Bubble",
                 "Ice Dagger",
                 "Ice Dome",
@@ -60,16 +59,14 @@
                 "Water Ring",
                 "Water Sprout/Water Vortex"
             ],
-            "avatar level":
-            [
+            "avatar level": [
                 "Ice Fissure",
                 "Remote Waterbending",
                 "Tsunami",
                 "Water Compression"
             ],
-            "special techniques":
-            [
-                "Armless Waterbending", 
+            "special techniques": [
+                "Armless Waterbending",
                 "Bloodbending",
                 "Cloud Manipulation",
                 "Condensation",
@@ -80,85 +77,207 @@
                 "Water Run"
             ]
         },
-        "weapons":
-        [
+        "weapons": [
             "Water Skins"
-        ], 
-        "weaknesses":
-        [
+        ],
+        "weaknesses": [
             "Reliance on External Water Source",
             "Reliance on Movement of the Arms",
             "Lunar Eclipse",
             "Present Emotional State",
             "Lightening"
         ]
-        },
-        {
-            "name": "Earthbending",
-            "source": "Earth",
-            "learned from": "Badger Moles",
-            "alternative styles": [
-                "Metalbending",
-                "Lavabending",
-                "Mudbending",
-                "Sandbending"
+    },
+    {
+        "name": "Firebending",
+        "source": "Fire",
+        "learned from": "Dragons",
+        "alternative styles": [
+            "Combustion",
+            "Lightening Generation",
+            "Lightening Redirection"
+        ],
+        "abilities": {
+            "general": [
+                "Blazing Ring and Arcs",
+                "Blocking Fire",
+                "Dancing Dragon",
+                "Fire Blade",
+                "Fire Bomb",
+                "Fire Circle",
+                "Fire Dagger",
+                "Fire Lashes",
+                "Fire Stepping",
+                "Fire Whips",
+                "Fireballs/Fire-Jabs",
+                "Flame Redirection",
+                "Shield of Fire"
             ],
-            "abilities": {
-                "general": [
-                    "Earth and Stone Levitation",
-                    "Earth Block",
-                    "Earth Column",
-                    "Earth Compression",
-                    "Earth Gaunlet",
-                    "Earth hand/mannequin",
-                    "Earth Launch",
-                    "Earth Material Manipulation",
-                    "Earth Shelter",
-                    "Earth Wall",
-                    "Earthquakes/Fissures",
-                    "Quicksand",
-                    "Rock Hanging",
-                    "Rock Slide",
-                    "Sand Sprout",
-                    "Slab shackles"
-                ],
-                "advanced":
-                [
-                    "Dust Cloud",
-                    "Dust Stepping",
-                    "Earth Armour",
-                    "Earth Bomb",
-                    "Earth Tunneling",
-                    "Earth Wave",
-                    "Magnetization",
-                    "Remote Earthbending"
-                ],
-                "avatar level":
-                [
-                    "Compressed Rock Bullets",
-                    "Enhanced Earth Armour",
-                    "Enhanced Earth Levitation",
-                    "Powered Compression", 
-                    "Tectonics"
-                ],
-                "special techniques":
-                [
-                    "Rock Shoes", 
-                    "Rock Gloves",
-                    "Seismic Sense"
-                ]
-            },
-            "weapons":
-            [
-                "Dadao", 
-                "Meteor Hammers", 
-                "Fans"
-            ], 
-            "weaknesses":
-            [
-                "Reliance on Earth",
-                "Reliance on Lower Body"
+            "advanced": [
+                "Charged Attacks",
+                "Fire Augmentation",
+                "Fire Coment",
+                "Fire Missiles",
+                "Fire Pinwheel",
+                "Jet Propulsion",
+                "Pressurized Fire Steam",
+                "Wall of Flame"
+            ],
+            "avatar level": [
+                "Long Range Fire Whip"
+            ],
+            "special techniques": [
+                "Blue Fire",
+                "Break of Fire",
+                "Combustionbending",
+                "Dragon Fire",
+                "Energy Reading"
             ]
-            }
-        
-    ]
+        },
+        "weapons": [
+            "Dual Broadswords"
+        ],
+        "weaknesses": [
+            "Extreme Cold",
+            "Full Moon",
+            "Lack of Defense",
+            "Lack of Drive",
+            "Situation that May Extinguish Flames",
+            "Poor Break Control",
+            "Poor Self Control",
+            "Solar Eclipse"
+        ]
+    }, {
+        "name": "Earthbending",
+        "source": "Earth",
+        "learned from": "Badger Moles",
+        "alternative styles": [
+            "Metalbending",
+            "Lavabending",
+            "Mudbending",
+            "Sandbending"
+        ],
+        "abilities": {
+            "general": [
+                "Earth and Stone Levitation",
+                "Earth Block",
+                "Earth Column",
+                "Earth Compression",
+                "Earth Gaunlet",
+                "Earth hand/mannequin",
+                "Earth Launch",
+                "Earth Material Manipulation",
+                "Earth Shelter",
+                "Earth Wall",
+                "Earthquakes/Fissures",
+                "Quicksand",
+                "Rock Hanging",
+                "Rock Slide",
+                "Sand Sprout",
+                "Slab shackles"
+            ],
+            "advanced":
+            [
+                "Dust Cloud",
+                "Dust Stepping",
+                "Earth Armour",
+                "Earth Bomb",
+                "Earth Tunneling",
+                "Earth Wave",
+                "Magnetization",
+                "Remote Earthbending"
+            ],
+            "avatar level":
+            [
+                "Compressed Rock Bullets",
+                "Enhanced Earth Armour",
+                "Enhanced Earth Levitation",
+                "Powered Compression", 
+                "Tectonics"
+            ],
+            "special techniques":
+            [
+                "Rock Shoes", 
+                "Rock Gloves",
+                "Seismic Sense"
+            ]
+        },
+        "weapons":
+        [
+            "Dadao", 
+            "Meteor Hammers", 
+            "Fans"
+        ], 
+        "weaknesses":
+        [
+            "Reliance on Earth",
+            "Reliance on Lower Body"
+        ]
+        },{
+        "name": "Earthbending",
+        "source": "Earth",
+        "learned from": "Badger Moles",
+        "alternative styles": [
+            "Metalbending",
+            "Lavabending",
+            "Mudbending",
+            "Sandbending"
+        ],
+        "abilities": {
+            "general": [
+                "Earth and Stone Levitation",
+                "Earth Block",
+                "Earth Column",
+                "Earth Compression",
+                "Earth Gaunlet",
+                "Earth hand/mannequin",
+                "Earth Launch",
+                "Earth Material Manipulation",
+                "Earth Shelter",
+                "Earth Wall",
+                "Earthquakes/Fissures",
+                "Quicksand",
+                "Rock Hanging",
+                "Rock Slide",
+                "Sand Sprout",
+                "Slab shackles"
+            ],
+            "advanced":
+            [
+                "Dust Cloud",
+                "Dust Stepping",
+                "Earth Armour",
+                "Earth Bomb",
+                "Earth Tunneling",
+                "Earth Wave",
+                "Magnetization",
+                "Remote Earthbending"
+            ],
+            "avatar level":
+            [
+                "Compressed Rock Bullets",
+                "Enhanced Earth Armour",
+                "Enhanced Earth Levitation",
+                "Powered Compression", 
+                "Tectonics"
+            ],
+            "special techniques":
+            [
+                "Rock Shoes", 
+                "Rock Gloves",
+                "Seismic Sense"
+            ]
+        },
+        "weapons":
+        [
+            "Dadao", 
+            "Meteor Hammers", 
+            "Fans"
+        ], 
+        "weaknesses":
+        [
+            "Reliance on Earth",
+            "Reliance on Lower Body"
+        ]
+        }
+]
