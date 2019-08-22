@@ -22,5 +22,6 @@ makeRequest();
             }
         };
         request.open('GET', proxyurl+url);
+        request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         request.send();
     }
