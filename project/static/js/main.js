@@ -17,7 +17,7 @@ makeRequest();
                         'Could not find any resource that matches the request, try again!';
                 } else {
                     document.getElementById('response-output').innerHTML =
-                        'Somethin went wrong. If this keeps happening, please post an issue at: https://github.com/joakimskoog/AnApiOfIceAndFire/issues';
+                        'Somethin went wrong. If this keeps happening, please post an issue at: https://github.com/melyxlin/avatar-api/issues';
                 }
             }
         };
