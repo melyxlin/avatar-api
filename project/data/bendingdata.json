@@ -1,69 +1,164 @@
 [
     {
-        "name": "Earthbending",
-        "source": "Earth",
-        "learned from": "Badger Moles",
+        "name": "Waterbending",
+        "source": "Moon and Ocean Spirits",
+        "learned from": "Moon",
         "alternative styles": [
-            "Metalbending",
-            "Lavabending",
-            "Mudbending",
-            "Sandbending"
+            "Bloodbending",
+            "Healing"
         ],
         "abilities": {
             "general": [
-                "Earth and Stone Levitation",
-                "Earth Block",
-                "Earth Column",
-                "Earth Compression",
-                "Earth Gaunlet",
-                "Earth hand/mannequin",
-                "Earth Launch",
-                "Earth Material Manipulation",
-                "Earth Shelter",
-                "Earth Wall",
-                "Earthquakes/Fissures",
-                "Quicksand",
-                "Rock Hanging",
-                "Rock Slide",
-                "Sand Sprout",
-                "Slab shackles"
+                "Breath of Ice",
+                "Ice Blade",
+                "Ice Bullets",
+                "Ice Claw",
+                "Ice Creepers",
+                "Ice Disk",
+                "Ice Gauntlet",
+                "Ice Hook",
+                "Ice Line",
+                "Ice Shield",
+                "Ice Spear",
+                "Iceberg Spike",
+                "Phase Change",
+                "Streaming the Water",
+                "Water Bullets",
+                "Water Cloak",
+                "Water Filtering",
+                "Water Jet",
+                "Water Knife",
+                "Water Manipulation",
+                "Water Pressure Manipulation",
+                "Water Wall/Shield",
+                "Water Whip",
+                "Wave"
             ],
             "advanced":
             [
-                "Dust Cloud",
-                "Dust Stepping",
-                "Earth Armour",
-                "Earth Bomb",
-                "Earth Tunneling",
-                "Earth Wave",
-                "Magnetization",
-                "Remote Earthbending"
+                "Bubble",
+                "Ice Dagger",
+                "Ice Dome",
+                "Ice Drill",
+                "Ice Floor",
+                "Ice Ladder",
+                "Ice Prison",
+                "Ice Ramp",
+                "Ice Sled",
+                "Ice Tunneling",
+                "Maelstorm",
+                "Mist-Stepping",
+                "Octopus Form",
+                "Partial Ice WHip",
+                "Razor Rings",
+                "Water Ball",
+                "Water Boxing",
+                "Water Dome",
+                "Water Drill",
+                "Water Gimbal",
+                "Water Pinwheel",
+                "Water Ring",
+                "Water Sprout/Water Vortex"
             ],
             "avatar level":
             [
-                "Compressed Rock Bullets",
-                "Enhanced Earth Armour",
-                "Enhanced Earth Levitation",
-                "Powered Compression", 
-                "Tectonics"
+                "Ice Fissure",
+                "Remote Waterbending",
+                "Tsunami",
+                "Water Compression"
             ],
             "special techniques":
             [
-                "Rock Shoes", 
-                "Rock Gloves",
-                "Seismic Sense"
+                "Armless Waterbending", 
+                "Bloodbending",
+                "Cloud Manipulation",
+                "Condensation",
+                "Healing",
+                "Plantbending",
+                "Spiritbending",
+                "Steam Manipulation",
+                "Water Run"
             ]
         },
         "weapons":
         [
-            "Dadao", 
-            "Meteor Hammers", 
-            "Fans"
+            "Water Skins"
         ], 
         "weaknesses":
         [
-            "Reliance on Earth",
-            "Reliance on Lower Body"
+            "Reliance on External Water Source",
+            "Reliance on Movement of the Arms",
+            "Lunar Eclipse",
+            "Present Emotional State",
+            "Lightening"
         ]
-        }
+        },
+        {
+            "name": "Earthbending",
+            "source": "Earth",
+            "learned from": "Badger Moles",
+            "alternative styles": [
+                "Metalbending",
+                "Lavabending",
+                "Mudbending",
+                "Sandbending"
+            ],
+            "abilities": {
+                "general": [
+                    "Earth and Stone Levitation",
+                    "Earth Block",
+                    "Earth Column",
+                    "Earth Compression",
+                    "Earth Gaunlet",
+                    "Earth hand/mannequin",
+                    "Earth Launch",
+                    "Earth Material Manipulation",
+                    "Earth Shelter",
+                    "Earth Wall",
+                    "Earthquakes/Fissures",
+                    "Quicksand",
+                    "Rock Hanging",
+                    "Rock Slide",
+                    "Sand Sprout",
+                    "Slab shackles"
+                ],
+                "advanced":
+                [
+                    "Dust Cloud",
+                    "Dust Stepping",
+                    "Earth Armour",
+                    "Earth Bomb",
+                    "Earth Tunneling",
+                    "Earth Wave",
+                    "Magnetization",
+                    "Remote Earthbending"
+                ],
+                "avatar level":
+                [
+                    "Compressed Rock Bullets",
+                    "Enhanced Earth Armour",
+                    "Enhanced Earth Levitation",
+                    "Powered Compression", 
+                    "Tectonics"
+                ],
+                "special techniques":
+                [
+                    "Rock Shoes", 
+                    "Rock Gloves",
+                    "Seismic Sense"
+                ]
+            },
+            "weapons":
+            [
+                "Dadao", 
+                "Meteor Hammers", 
+                "Fans"
+            ], 
+            "weaknesses":
+            [
+                "Reliance on Earth",
+                "Reliance on Lower Body"
+            ]
+            }
+        
     ]
