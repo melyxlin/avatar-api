@@ -106,7 +106,6 @@
         "fighting styles": [
             "Waterbending (Northern Style)",
             "Bloodbending",
-            "Bloodbending",
             "Chi Blocking"
         ]
     },
@@ -366,6 +365,93 @@
         ]
     },
     {
+        "name": "Bumi",
+        "ethnicity": "Air Nomad",
+        "nationality": "Republic Nation",
+        "bending": [
+            "Airbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Commander of the Second Division of the United Forces"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Air Nomads",
+            "United Forces"
+        ],
+        "weapons": [
+            "Knife"
+        ],
+        "fighting styles": [
+            "Airbending",
+            "Boxing",
+            "Knife-Throwing"
+        ]
+    },
+    {
+        "name": "Bumi (King of Omashu)",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Earthbending"
+        ],
+        "gender": "Male",
+        "year of birth": "12 BG",
+        "year of death": "",
+        "roles": [
+            "King of Omashu",
+            "Member of the White Lotus"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "Earth Kingdom",
+            "Order of the White Lotus"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Earthbending (Hung Gar Kung Fu)"
+        ]
+    },
+    {
+        "name": "Buthaka",
+        "ethnicity": "United Republic",
+        "nationality": "Republic Nation",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Director of the Pro-bending League"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
+        "name": "Buttercup Raiko",
+        "ethnicity": "United Republic",
+        "nationality": "Republic Nation",
+        "bending": [],
+        "gender": "Female",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "First Lady of the United Republic"
+        ],
+        "aliases": [],
+        "affiliations": [
+            "United Republic Government"
+        ],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
         "name": "Katara",
         "ethnicity": "Water Tribe",
         "nationality": "Southern Water Tribe",
@@ -383,6 +469,12 @@
         "affiliations": [
             "Southern Water Tribe",
             "Team Avatar"
+        ],
+        "weapons": [],
+        "fighting styles": [
+            "Waterbending (Northern Style)",
+            "Waterbending (Southern Style)",
+            "Bloodbending"
         ]
     },
     {
@@ -413,6 +505,10 @@
         ],
         "weapons": [
             "Dual Broadswords"
+        ],
+        "fighting styles": [
+            "Firebending (Dancing Dragon)",
+            "Dual Dao Swordsmanship"
         ]
     },
     {

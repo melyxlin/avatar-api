@@ -68,7 +68,8 @@ def test_all_bendings_api(client):
         THEN check if the response is valid
         """
         response = client.get("/bendings")
-        if response.status_code != 200:
+        data = json.loads(response.data)
+        if response.status_code != 200 and len(data) == 4:
                 raise AssertionError()
 
 def test_character_api(client):
