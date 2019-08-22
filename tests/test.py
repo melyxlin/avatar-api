@@ -46,7 +46,7 @@ def test_all_characters_api(client):
     """
     response = client.get("/characters")
     data = json.loads(response.data)
-    if len(data) != 19 or response.status_code != 200:
+    if response.status_code != 200:
             raise AssertionError()
 
 def test_all_locations_api(client):
