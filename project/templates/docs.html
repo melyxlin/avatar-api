@@ -64,16 +64,137 @@
           </div>
 
           <p style="  font-style: italic;">Returns all characters.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>name</td>
+                <td class="value">string</td>
+                <td>Name of character</td>
+              </tr>
+              <tr>
+                <td>gender</td>
+                <td class="value">string</td>
+                <td>Gender of character</td>
+              </tr>
+              <tr>
+                <td>ethnicity</td>
+                <td class="value">string</td>
+                <td>Ethnicity of character</td>
+              </tr>
+              <tr>
+                <td>nationality</td>
+                <td class="value">string</td>
+                <td>Nationality of character</td>
+              </tr>
+              <tr>
+                <td>bending</td>
+                <td class="value">array of strings</td>
+                <td>The bendings that the character can do. If character is a nonbender or undisclosed, then
+                  'Nonbending'</td>
+              </tr>
+              <tr>
+                <td>year of birth</td>
+                <td class="value">string</td>
+                <td>Character's date of birth</td>
+              </tr>
+              <tr>
+                <td>year of death</td>
+                <td class="value">string</td>
+                <td>Character's date of death</td>
+              </tr>
+              <tr>
+                <td>roles</td>
+                <td class="value">array of strings</td>
+                <td>Characters's role during their lifetime</td>
+              </tr>
+              <tr>
+                <td>aliases</td>
+                <td class="value">array of strings</td>
+                <td>Aliases that the character has used </td>
+              </tr>
+              <tr>
+                <td>affiliations</td>
+                <td class="value">array of strings</td>
+                <td>Affiliations that the character belongs to </td>
+              </tr>
+              <tr>
+                <td>weapons</td>
+                <td class="value">array of strings</td>
+                <td>Weapons that the character uses </td>
+              </tr>
+              <tr>
+                <td>fighting styles</td>
+                <td class="value">array of strings</td>
+                <td>Fighting styles that the character uses </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h5 class="header col s12 light">Characters Route (using a filter)</h5>
+        <div>
+          <p>
+            <strong>Example response:</strong>
+          </p>
+          <div style="border-style: solid; border-color: blanchedalmond; width:60%">
+            <pre><code">
+  [
+    {
+      "name": "Aang",
+      "ethnicity": "Air Nomad",
+       "nationality": "Southern Air Temple",
+       "bending": [
+        "Airbending",
+        "Waterbending",
+        "Earthbending",
+        "Firebending"
+      ],
+      "gender": "Male",
+      "year of birth": "12 BG",
+      "year of death": "153 AG",
+      ...
+    },
+    {
+      "name": "Zuko",
+      ...
+      "aliases": [
+        "Lee",
+        "Zuzu",
+        "Blue Spirit"
+      ],
+      "affiliations": [
+        "Fire Nation Royal Family",
+        "Team Avatar"
+      ],
+      "weapons": [
+        "Dual Broadswords"
+      ],
+        "fighting styles": [
+          "Firebending (Dancing Dragon)",
+          "Dual Dao Swordsmanship"
+      ]
+    },
+    ...
+  ]
+      </code></pre>
+          </div>
+        </div>
+        <br>
+        <h6 class="header col s12 light">Filtering Characters</h6>
+        <p>
+          You can also include filter parameters in your request to the characters endpoint by the following url:</p>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
             <pre><code style="font-size: 20px; ">GET /characters/param/{value}</code></pre>
 
           </div>
 
-          <p style="  font-style: italic;">Returns all characters whose value matches the value of the given parameter.
-          </p>
           <table>
             <thead>
               <tr>
@@ -113,15 +234,69 @@
           </table>
 
         </div>
-
-        <h5 class="header col s12 light">Character Route</h5>
+        <br>
+        <h6 class="header col s12 light">Getting a specific character</h6>
+        <p>
+          You can also get a specific character by the following url:</p>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
             <code style="font-size: 20px">GET /characters/{name}</code>
 
           </div>
 
-          <p style="  font-style: italic;">Returns a specific character given a name.</p>
+          <div>
+            <p>
+              <strong>Example response:</strong>
+            </p>
+            <div style="border-style: solid; border-color: blanchedalmond; width:60%">
+              <pre><code">
+  {
+    "name": "Aang",
+    "ethnicity": "Air Nomad",
+    "nationality": "Southern Air Temple",
+    "bending": [
+      "Airbending",
+      "Waterbending",
+      "Earthbending",
+      "Firebending"
+    ],
+    "gender": "Male",
+    "year of birth": "12 BG",
+    "year of death": "153 AG",
+    "roles": [
+      "Avatar",
+      "Co-founder of the United Republic of Nations",
+      "Air Nomad Culture Teacher",
+      "Airbending instructor"
+    ],
+    "aliases": [
+      "Twinkle Toes",
+      "Kuzon"
+    ],
+    "affiliations": [
+      "Air Nomads",
+      "Air Acolytes",
+      "Team Avatar"
+    ],
+    "weapons": [
+      "Glider Staff"
+    ],
+    "fighting styles": [
+      "Airbending",
+      "Waterbending (Northern Style)",
+      "Waterbending (Southern Style)",
+      "Earthbending (Chu Gar Praying Mantis Kung Fu)",
+      "Firebending (Dancing Dragon)",
+      "Energybending"
+    ]
+  }
+          </code></pre>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+
         </div>
         <h5 class="header col s12 light">Locations Route</h5>
         <div class="col s5 m10">
@@ -129,19 +304,74 @@
             <code style="font-size: 20px">GET /locations</code>
 
           </div>
-
           <p style="  font-style: italic;">Returns all the locations.</p>
+          <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr>
+                  <td>name</td>
+                  <td class="value">string</td>
+                  <td>Name of location</td>
+                </tr>
+                <tr>
+                  <td>nation</td>
+                  <td class="value">string</td>
+                  <td>Nation where location is located</td>
+                </tr>
+                <tr>
+                  <td>location</td>
+                  <td class="value">string</td>
+                  <td>General location of where in the nation the location is located</td>
+                </tr>
+                <tr>
+                  <td>role</td>
+                  <td class="value">string</td>
+                  <td>The main function of the location </td>
+                </tr>
+              </tbody>
+            </table>
+          <div>
+              <p>
+                <strong>Example response:</strong>
+              </p>
+              <div style="border-style: solid; border-color: blanchedalmond; width:60%">
+                <pre><code">
+  [
+    {
+      "name": "Eastern Air Temple",
+      "nation": "Air Nomad Mountain Range",
+      "location": "Southeast of Earth Kingsdom",
+      "role": "Home to Female Air Acolytes and Air Nomads"
+    },
+    {
+      "name": "Ba Sing Se",
+      "nation": "Earth Kingdom",
+      "location": "Northeastern Earth Kingdom",
+      "role": "Capital of the Earth Kingdom"
+    },
+    ....
+  ]
+            </code></pre>
+              </div>
+            </div>
         </div>
 
-        <h5 class="header col s12 light">Locations Route (using a filter)</h5>
+<br>
+        <h6 class="header col s12 light">Filtering Locations</h6>
+        <p>
+          You can also include filter parameters in your request to the locations endpoint by the following url:</p>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
             <pre><code style="font-size: 20px; ">GET /locations/param/{value}</code></pre>
 
           </div>
-
-          <p style="  font-style: italic;">Returns all locations whose value matches the value of the given parameter.
-          </p>
           <table>
             <thead>
               <tr>
@@ -162,17 +392,33 @@
           </table>
 
         </div>
-
-        <h5 class="header col s12 light">Location Route</h5>
+<br>
+        <h6 class="header col s12 light">Getting a specific location</h6>
+        <p>
+            You can also get a specific location by the following url:</p>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
             <code style="font-size: 20px">GET /locations/{name}</code>
 
           </div>
-
-          <p style="  font-style: italic;">Returns a specific location given a name.</p>
+          <div>
+              <p>
+                <strong>Example response:</strong>
+              </p>
+              <div style="border-style: solid; border-color: blanchedalmond; width:60%">
+                <pre><code">
+  {
+    "name": "Eastern Air Temple",
+    "nation": "Air Nomad Mountain Range",
+    "location": "Southeast of Earth Kingsdom",
+    "role": "Home to Female Air Acolytes and Air Nomads"
+  }
+            </code></pre>
+              </div>
+            </div>
         </div>
-
+        <br>
+<hr>
         <h5 class="header col s12 light">Bendings Route</h5>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
@@ -182,17 +428,266 @@
 
           <p style="  font-style: italic;">Returns all bendings.</p>
         </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
 
-        <h5 class="header col s12 light">Bending Route</h5>
+            <tbody>
+              <tr>
+                <td>name</td>
+                <td class="value">string</td>
+                <td>Name of bending</td>
+              </tr>
+              <tr>
+                <td>source</td>
+                <td class="value">string</td>
+                <td>Source of bending</td>
+              </tr>
+              <tr>
+                <td>learned from </td>
+                <td class="value">string</td>
+                <td>Object or animal in which benders learned bending from </td>
+              </tr>
+              <tr>
+                <td>alternative styles</td>
+                <td class="value">array of strings</td>
+                <td>Alternative styles of bending </td>
+              </tr>
+              <tr>
+                  <td>abilities</td>
+                  <td class="value">dictionary whose keys are string and values are an array of strings</td>
+                  <td>Alternative styles of bending </td>
+                </tr>
+                <tr>
+                    <td>weapons</td>
+                    <td class="value">array of strings</td>
+                    <td> weapons that benders use</td>
+                  </tr>
+                  <tr>
+                      <td>weaknesses</td>
+                      <td class="value">array of strings</td>
+                      <td> weaknesses of bending</td>
+                    </tr>
+            </tbody>
+          </table>
+
+        <div>
+            <p>
+              <strong>Example response:</strong>
+            </p>
+            <div style="border-style: solid; border-color: blanchedalmond; width:60%">
+              <pre><code">
+  [
+    {
+      "name": "Waterbending",
+      "source": "Moon and Ocean Spirits",
+      "learned from": "Moon",
+      "alternative styles": [
+        "Bloodbending",
+        "Healing"
+      ],
+      "abilities": {
+        "general": [
+          "Breath of Ice",
+          "Ice Blade",
+          "Ice Bullets",
+          "Ice Claw",
+          "Ice Creepers",
+          "Ice Disk",
+          "Ice Gauntlet",
+          "Ice Hook",
+          "Ice Line",
+          "Ice Shield",
+          "Ice Spear",
+          "Iceberg Spike",
+          "Phase Change",
+          "Streaming the Water",
+          "Water Bullets",
+          "Water Cloak",
+          "Water Filtering",
+          "Water Jet",
+          "Water Knife",
+          "Water Manipulation",
+          "Water Pressure Manipulation",
+          "Water Wall/Shield",
+          "Water Whip",
+          "Wave"
+        ],
+        "advanced": [
+          "Bubble",
+          "Ice Dagger",
+          "Ice Dome",
+          "Ice Drill",
+          "Ice Floor",
+          "Ice Ladder",
+          "Ice Prison",
+          "Ice Ramp",
+          "Ice Sled",
+          "Ice Tunneling",
+          "Maelstorm",
+          "Mist-Stepping",
+          "Octopus Form",
+          "Partial Ice WHip",
+          "Razor Rings",
+          "Water Ball",
+          "Water Boxing",
+          "Water Dome",
+          "Water Drill",
+          "Water Gimbal",
+          "Water Pinwheel",
+          "Water Ring",
+          "Water Sprout/Water Vortex"
+        ],
+        "avatar level": [
+          "Ice Fissure",
+          "Remote Waterbending",
+          "Tsunami",
+          "Water Compression"
+        ],
+        "special techniques": [
+          "Armless Waterbending",
+          "Bloodbending",
+          "Cloud Manipulation",
+          "Condensation",
+          "Healing",
+          "Plantbending",
+          "Spiritbending",
+          "Steam Manipulation",
+          "Water Run"
+          ]
+        },
+        "weapons": [
+          "Water Skins"
+        ],
+        "weaknesses": [
+          "Reliance on External Water Source",
+          "Reliance on Movement of the Arms",
+          "Lunar Eclipse",
+          "Present Emotional State",
+          "Lightening"
+        ]
+      },
+      ...
+    ]
+          </code></pre>
+            </div>
+          </div>
+
+        <h6 class="header col s12 light">Bending Route</h6>
+        <p>
+            You can also get a specific bending by the following url:</p>
+        <p> </p>
         <div class="col s5 m10">
           <div class="URL" style="background-color: blanchedalmond">
             <code style="font-size: 20px">GET /bendings/{name}</code>
 
           </div>
 
-          <p style="  font-style: italic;">Returns a specific bending given a name.</p>
+          <div>
+              <p>
+                <strong>Example response:</strong>
+              </p>
+              <div style="border-style: solid; border-color: blanchedalmond; width:60%">
+                <pre><code">
+    {
+        "name": "Waterbending",
+        "source": "Moon and Ocean Spirits",
+        "learned from": "Moon",
+        "alternative styles": [
+          "Bloodbending",
+          "Healing"
+        ],
+        "abilities": {
+          "general": [
+            "Breath of Ice",
+            "Ice Blade",
+            "Ice Bullets",
+            "Ice Claw",
+            "Ice Creepers",
+            "Ice Disk",
+            "Ice Gauntlet",
+            "Ice Hook",
+            "Ice Line",
+            "Ice Shield",
+            "Ice Spear",
+            "Iceberg Spike",
+            "Phase Change",
+            "Streaming the Water",
+            "Water Bullets",
+            "Water Cloak",
+            "Water Filtering",
+            "Water Jet",
+            "Water Knife",
+            "Water Manipulation",
+            "Water Pressure Manipulation",
+            "Water Wall/Shield",
+            "Water Whip",
+            "Wave"
+          ],
+          "advanced": [
+            "Bubble",
+            "Ice Dagger",
+            "Ice Dome",
+            "Ice Drill",
+            "Ice Floor",
+            "Ice Ladder",
+            "Ice Prison",
+            "Ice Ramp",
+            "Ice Sled",
+            "Ice Tunneling",
+            "Maelstorm",
+            "Mist-Stepping",
+            "Octopus Form",
+            "Partial Ice WHip",
+            "Razor Rings",
+            "Water Ball",
+            "Water Boxing",
+            "Water Dome",
+            "Water Drill",
+            "Water Gimbal",
+            "Water Pinwheel",
+            "Water Ring",
+            "Water Sprout/Water Vortex"
+          ],
+          "avatar level": [
+            "Ice Fissure",
+            "Remote Waterbending",
+            "Tsunami",
+            "Water Compression"
+          ],
+          "special techniques": [
+            "Armless Waterbending",
+            "Bloodbending",
+            "Cloud Manipulation",
+            "Condensation",
+            "Healing",
+            "Plantbending",
+            "Spiritbending",
+            "Steam Manipulation",
+            "Water Run"
+            ]
+          },
+          "weapons": [
+            "Water Skins"
+          ],
+          "weaknesses": [
+            "Reliance on External Water Source",
+            "Reliance on Movement of the Arms",
+            "Lunar Eclipse",
+            "Present Emotional State",
+            "Lightening"
+          ]
+        }
+            </code></pre>
+              </div>
+            </div>
         </div>
-
+        
 
       </div>
       <br><br>
