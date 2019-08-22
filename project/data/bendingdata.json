@@ -147,7 +147,8 @@
             "Poor Self Control",
             "Solar Eclipse"
         ]
-    }, {
+    },
+    {
         "name": "Earthbending",
         "source": "Earth",
         "learned from": "Badger Moles",
@@ -176,8 +177,7 @@
                 "Sand Sprout",
                 "Slab shackles"
             ],
-            "advanced":
-            [
+            "advanced": [
                 "Dust Cloud",
                 "Dust Stepping",
                 "Earth Armour",
@@ -187,33 +187,30 @@
                 "Magnetization",
                 "Remote Earthbending"
             ],
-            "avatar level":
-            [
+            "avatar level": [
                 "Compressed Rock Bullets",
                 "Enhanced Earth Armour",
                 "Enhanced Earth Levitation",
-                "Powered Compression", 
+                "Powered Compression",
                 "Tectonics"
             ],
-            "special techniques":
-            [
-                "Rock Shoes", 
+            "special techniques": [
+                "Rock Shoes",
                 "Rock Gloves",
                 "Seismic Sense"
             ]
         },
-        "weapons":
-        [
-            "Dadao", 
-            "Meteor Hammers", 
+        "weapons": [
+            "Dadao",
+            "Meteor Hammers",
             "Fans"
-        ], 
-        "weaknesses":
-        [
+        ],
+        "weaknesses": [
             "Reliance on Earth",
             "Reliance on Lower Body"
         ]
-        },{
+    },
+    {
         "name": "Earthbending",
         "source": "Earth",
         "learned from": "Badger Moles",
@@ -242,8 +239,7 @@
                 "Sand Sprout",
                 "Slab shackles"
             ],
-            "advanced":
-            [
+            "advanced": [
                 "Dust Cloud",
                 "Dust Stepping",
                 "Earth Armour",
@@ -253,31 +249,86 @@
                 "Magnetization",
                 "Remote Earthbending"
             ],
-            "avatar level":
-            [
+            "avatar level": [
                 "Compressed Rock Bullets",
                 "Enhanced Earth Armour",
                 "Enhanced Earth Levitation",
-                "Powered Compression", 
+                "Powered Compression",
                 "Tectonics"
             ],
-            "special techniques":
-            [
-                "Rock Shoes", 
+            "special techniques": [
+                "Rock Shoes",
                 "Rock Gloves",
                 "Seismic Sense"
             ]
         },
-        "weapons":
-        [
-            "Dadao", 
-            "Meteor Hammers", 
+        "weapons": [
+            "Dadao",
+            "Meteor Hammers",
             "Fans"
-        ], 
-        "weaknesses":
-        [
+        ],
+        "weaknesses": [
             "Reliance on Earth",
             "Reliance on Lower Body"
         ]
-        }
+    },
+    {
+        "name": "Airbending",
+        "source": "Air",
+        "learned from": "Flying Bisons",
+        "alternative styles": [
+            "Flight",
+            "Spirit Projecting"
+        ],
+        "abilities": {
+            "general": [
+                "Air Ball",
+                "Air Blast",
+                "Air Bomb",
+                "Air Cushions",
+                "Air Funnel",
+                "Air Manipulation",
+                "Air Push/Kick",
+                "Air Shield",
+                "Air Swipe",
+                "Air Wheel",
+                "Breath of Wind",
+                "Enhanced Agility",
+                "Enhance Speed",
+                "Heat Regulation",
+                "Suction"
+            ],
+            "advanced": [
+                "Air Blade",
+                "Air Coocoon",
+                "Air Propulsion",
+                "Air Sprout",
+                "Air Vortex",
+                "Air Wake",
+                "Asphyxiation",
+                "Levitation",
+                "Tornado"
+            ],
+            "avatar level": [
+                "Air Sphere",
+                "Strong Winds",
+                "Hurricanes/Tornadoes"
+            ],
+            "special techniques": [
+                "Air Scooter",
+                "Cloud Manipulation",
+                "Hypersensitivity",
+                "Flight",
+                "Gliding",
+                "Spiritual Projection"
+            ]
+        },
+        "weapons": [
+            "Glider Staff",
+            "Wind Sword"
+        ],
+        "weaknesses": [
+            "Airbender Principles Regarding Fatal Moves"
+        ]
+    }
 ]
