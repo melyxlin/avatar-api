@@ -5,7 +5,6 @@ makeRequest();
     }
     function makeRequest() {
         var url = document.getElementById('request-url-input').value;
-        const proxyurl = "https://cors-anywhere.herokuapp.com/";
         var request = new XMLHttpRequest();
         request.onreadystatechange = function() {
             if (request.readyState == XMLHttpRequest.DONE) {
@@ -21,7 +20,6 @@ makeRequest();
                 }
             }
         };
-        request.open('GET', proxyurl+url);
-        request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        request.open('GET', url);
         request.send();
     }
