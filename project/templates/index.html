@@ -38,27 +38,45 @@
         <h5 class="header col s12 light">The RESTful Avatar the Last Airbender/Legend of Korra API</h5>
         <h6 class="header col s12 light">All the ATLA and LOK data you ever need!</h6>
       </div>
-
+      <h3 style="color: black">Try it Out!</h3>
       <div class="col s12 m6">
         <div class="card" style="background-color: blanchedalmond">
           <div class="card-content white-text">
-            <span class="card-title" style="color: black">Try it out!</span>
-            <br>
-            <input class="input-group-field" id="request-url-input" name="q" type="text"
-              value="https://avatarapi.herokuapp.com/characters/Katara" style="background-color: white;">
-            <small style="color: black">Try <a href="#"
-                onClick="updateRequestUrl('https://avatarapi.herokuapp.com/characters/Katara'); return false;">/characters/Katara</a>,
-              <a href="#"
-                onClick="updateRequestUrl('https://avatarapi.herokuapp.com/bendings/Waterbending'); return false;">/bendings/Waterbending</a>
-              or
-              <a href="#"
-                onClick="updateRequestUrl('https://avatarapi.herokuapp.com/locations/Northern%20Water%20Tribe'); return false;">/locations/Northern%20Water%20Tribe</a></small>
+            <div class="row">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="file-field input-field">
+                      <div class="btn" onclick="makeRequest(); return false;" style="background-color: white;">
+
+                        <i class="fas fa-search" style="color: black"></i>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="input-group-field" id="request-url-input" name="q" type="text"
+                          value="https://avatarapi.herokuapp.com/characters/Katara">
+                      </div>
+                      <small style="color: black">Try <a href="#"
+                          onClick="updateRequestUrl('https://avatarapi.herokuapp.com/characters/Katara'); return false;">/characters/Katara</a>,
+                        <a href="#"
+                          onClick="updateRequestUrl('https://avatarapi.herokuapp.com/bendings/Waterbending'); return false;">/bendings/Waterbending</a>
+                        or
+                        <a href="#"
+                          onClick="updateRequestUrl('https://avatarapi.herokuapp.com/locations/Northern%20Water%20Tribe'); return false;">/locations/Northern%20Water%20Tribe</a></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
 
             <div class="col s12 m6">
               <div class="col s12 m6">
                 <div class="card" style="overflow:auto; height:500px">
                   <div class="card-content">
-                    <pre id="response-output" class="scrollable" style="color:black;"> {}
+                    <pre id="response-output" class="scrollable" style="color:black;">
               </div>
             </div>
           </div>
