@@ -6,6 +6,24 @@
         "role": "Home to Female Air Acolytes and Air Nomads"
     },
     {
+        "name": "Northern Air Temple",
+        "nation":"Air Nomad Mountain Range",
+        "location":"Northeast of Earth Kingdom",
+        "role": "Training Center for Newly Recruited Airbenders" 
+    }, 
+    {
+        "name":"Southern Air Temple",
+        "nation":"Air Nomad Mountain Range",
+        "location":"Patola Mountain Range",
+        "role":"Home to Male Air Acolytes and Air Nomads"
+    },
+    {
+        "name":"Western Air Temple",
+        "nation":"Air Nomad Mountain Range",
+        "location":"North of Fire Nation",
+        "role":  "Home to Female Air Acolytes and Air Nomads"
+    },
+    {
         "name": "Ba Sing Se",
         "nation": "Earth Kingdom",
         "location": "Northeastern Earth Kingdom",
