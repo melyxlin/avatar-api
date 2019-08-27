@@ -452,6 +452,223 @@
         "fighting styles": []
     },
     {
+        "name": "Cabbage Merchant",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Cabbage Merchant"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    }, 
+    {
+        "name": "Chan",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Popular Teen"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    }, 
+    {
+        "name": "Chit Sang",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Fire Nation Fugitive"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": ["Firebending"]
+    }, 
+    {
+        "name": "Chow",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Nomad"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
+        "name": "Chong",
+        "ethnicity": "Earth Kingdom",
+        "nationality": "Earth Kingdom",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Fruit Store Vendor"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
+        "name": "Combustion Man",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Assassin"
+        ],
+        "aliases": ["Sparky Sparky Boom Boom Man"],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": ["Firebending", "Combustion Bending"]
+    },
+    {
+        "name": "Daw",
+        "ethnicity": "United Republic",
+        "nationality": "Republic Nation",
+        "bending": [
+            "Airbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Shopkeeper", "Airbender in Training"
+        ],
+        "aliases": [],
+        "affiliations": ["Air Nation"],
+        "weapons": [],
+        "fighting styles": ["Airbending"]
+    },
+    {
+        "name": "Desna",
+        "ethnicity": "Water Tribe",
+        "nationality": "Northern Water Tribe",
+        "bending": [
+            "Waterbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Northern Water Tribe Chief"
+        ],
+        "aliases": [],
+        "affiliations": ["Northern Water Tribe"],
+        "weapons": [],
+        "fighting styles": ["Waterbending (Northern Style)"]
+    },
+    {
+        "name": "Ding",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "33 AG",
+        "year of death": "",
+        "roles": [
+            "Only Survivor of Hama's Attack"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
+        "name": "Dock/Xue/Bushi",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Shopkeeper","Ferryman"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    },
+    {
+        "name": "Due",
+        "ethnicity": "Water Tribe",
+        "nationality": "Foggy Swamp Tribe",
+        "bending": [
+            "Waterbending"
+        ],
+        "gender": "Male",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Waterbending Master"
+        ],
+        "aliases": [],
+        "affiliations": ["Foggy Swamp Tribe"],
+        "weapons": [],
+        "fighting styles": ["Waterbending (Foggy Swamp Style)"]
+    },
+    {
+        "name": "Ember Island Players",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Nonbending"
+        ],
+        "gender": "Mixed",
+        "year of birth": "",
+        "year of death": "",
+        "roles": [
+            "Acting Troupe"
+        ],
+        "aliases": [],
+        "affiliations": [],
+        "weapons": [],
+        "fighting styles": []
+    },
+     
+    {
         "name": "Katara",
         "ethnicity": "Water Tribe",
         "nationality": "Southern Water Tribe",
@@ -475,40 +692,6 @@
             "Waterbending (Northern Style)",
             "Waterbending (Southern Style)",
             "Bloodbending"
-        ]
-    },
-    {
-        "name": "Zuko",
-        "ethnicity": "Fire Nation",
-        "nationality": "Fire Nation",
-        "bending": [
-            "Firebending"
-        ],
-        "gender": "Male",
-        "year of birth": "83 AG",
-        "year of death": "",
-        "roles": [
-            "Fire Lord",
-            "Co-founder of the United Republic of Nations",
-            "Tea Shop Assistant",
-            "Ambassador",
-            "Firebending Instructor"
-        ],
-        "aliases": [
-            "Lee",
-            "Zuzu",
-            "Blue Spirit"
-        ],
-        "affiliations": [
-            "Fire Nation Royal Family",
-            "Team Avatar"
-        ],
-        "weapons": [
-            "Dual Broadswords"
-        ],
-        "fighting styles": [
-            "Firebending (Dancing Dragon)",
-            "Dual Dao Swordsmanship"
         ]
     },
     {
@@ -557,6 +740,40 @@
         "affiliations": [
             "Fire Nation Royal Family",
             "Team Avatar"
+        ]
+    },
+    {
+        "name": "Zuko",
+        "ethnicity": "Fire Nation",
+        "nationality": "Fire Nation",
+        "bending": [
+            "Firebending"
+        ],
+        "gender": "Male",
+        "year of birth": "83 AG",
+        "year of death": "",
+        "roles": [
+            "Fire Lord",
+            "Co-founder of the United Republic of Nations",
+            "Tea Shop Assistant",
+            "Ambassador",
+            "Firebending Instructor"
+        ],
+        "aliases": [
+            "Lee",
+            "Zuzu",
+            "Blue Spirit"
+        ],
+        "affiliations": [
+            "Fire Nation Royal Family",
+            "Team Avatar"
+        ],
+        "weapons": [
+            "Dual Broadswords"
+        ],
+        "fighting styles": [
+            "Firebending (Dancing Dragon)",
+            "Dual Dao Swordsmanship"
         ]
     }
 ]
