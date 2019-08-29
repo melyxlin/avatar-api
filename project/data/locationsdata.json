@@ -30,6 +30,66 @@
         "role": "Capital of the Earth Kingdom"
     },
     {
+        "name": "Full Moon Bay",
+        "nation":"Earth Kingdom",
+        "location":"Central Earth Kingdom",
+        "role":"Transport Hub"  
+    },
+    {
+        "name":"The Great Divide",
+        "nation":"Earth Kingdom",
+        "location":"Central Earth Kingdom",
+        "role":"Largest Canyon on the Planet"
+    },
+    {
+        "name":"Si Wong Desert",
+        "nation":"Earth Kingdom",
+        "location":"Central Earth Kingdom",
+        "role":"Largest, Driest, and Hottest Desert on Earth"
+    },
+    {
+        "name":"Serpent's Path",
+        "nation":"Earth Kingdom",
+        "location":"Northeastern Earth Kingdom",
+        "role":"One of the Direct Paths to Ba Sing Se guarded by Serpents"
+    },
+    {
+        "name":"Chin Village",
+        "nation":"Earth Kingdom",
+        "location":"Southern Earth Kingdom",
+        "role":"Host to the Avatar Day Festival"
+    },
+    {
+        "name":"Gaoling",
+        "nation":"Earth Kingdom",
+        "location":"Southern Earth Kingdom",
+        "role":"Captial of Gaoling State"
+    },
+    {
+        "name":"Kyoshi Island",
+        "nation":"Earth Kingdom",
+        "location":"Southern Earth Kingdom",
+        "role":"Residence of the Kyoshi Warriors"
+    },
+    {
+        "name":"Omashu",
+        "nation":"Earth Kingdom",
+        "location":"Southwestern Earth Kingdom",
+        "role":"Second Largest City in the Earth Kingdom"
+    },
+    {
+        "name":"Cave of Two Lovers",
+        "nation":"Earth Kingdom",
+        "location":"Koalu Mountains, Western Earth Kingdom",
+        "role":"Birthplace of Earthbending"
+    },
+    {
+        "name":"Gaipan",
+        "nation":"Earth Kingdom",
+        "location":"Western Earth Kingdom",
+        "role":"Fire Nation Military Outpost"
+    },
+    {
         "name": "Northern Water Tribe",
         "nation": "Water Tribe",
         "location": "North Pole",
