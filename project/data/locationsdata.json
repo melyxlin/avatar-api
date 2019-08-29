@@ -96,9 +96,51 @@
         "role": "Largest Division of the Water Tribes"
     },
     {
+        "name":"Boiling Rock",
+        "nation":"Fire Nation",
+        "location":"Northern Fire Nation",
+        "role":"Maximum Security Prison"
+    },
+    {
         "name": "Ember Island",
         "nation": "Fire Nation",
         "location": "Northern Fire Nation",
         "role": "Resort Island"
+    },
+    {
+        "name":"Fire Fountain City",
+        "nation":"Fire Nation",
+        "location":"Outer Fire Nation",
+        "role":"Industrial Town Named After the Large Statue of Fire Lord Ozai"
+    },
+    {
+        "name":"Fire Nation Captial",
+        "nation":"Fire Nation",
+        "location":"Central Mainland Fire Nation",
+        "role":"Capital City of the Fire Nation"
+    },
+    {
+        "name":"Hira'a",
+        "nation":"Fire Nation",
+        "location":"Fire Nation",
+        "role": "Hometown of Princess Ursa"
+    },
+    {
+        "name":"Jang Hui",
+        "nation":"Fire Nation",
+        "location":"Eastern Fire Nation",
+        "role":"Fishing VIllage"
+    },
+    {
+        "name":"Shu Jing",
+        "nation":"Fire Nation",
+        "location":"Eastern Fire Nation",
+        "role":"Small Town"
+    },
+    {
+        "name":"Sun Warrior's Ancient City",
+        "nation":"Fire Nation",
+        "location":"Northern Fire Nation",
+        "role":"Birthplace of the Dancing Dragon"
     }
 ]
